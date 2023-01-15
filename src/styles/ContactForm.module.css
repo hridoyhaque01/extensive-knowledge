@@ -6,6 +6,12 @@
   background-color: var(--light-clr);
   border-radius: 10px;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.singleInfo:hover {
+  background-color: var(--white-clr);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .infoIcon {
@@ -50,7 +56,7 @@
 /* formContent  */
 
 .formContent {
-  margin-top: 80px;
+  margin-top: 60px !important;
 }
 
 .map {

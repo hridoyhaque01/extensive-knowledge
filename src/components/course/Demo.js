@@ -1,16 +1,11 @@
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import React from "react";
 import { Link } from "react-router-dom";
 import { courseVid } from "../../images/course/Image";
 import { Section } from "../../styled-components/Container";
 import classes from "../../styles/course/CourseDetails.module.css";
-import Button from "../buttons/Button";
 import PageNavigation from "../PageNavigation";
-import PlayBtn from "../PlayBtn";
 
-export default function CourseDetails() {
-  const [isOpen, setOpen] = useState(false);
-
+export default function Demo() {
   return (
     <>
       <PageNavigation pageName="course details">
@@ -116,7 +111,7 @@ export default function CourseDetails() {
                     aria-labelledby="prod-overview-tab"
                   >
                     <div className={classes.contents}>
-                      <h4 className={`${classes.commonClr} $`}>
+                      <h4 className={classes.commonClr}>
                         Educavo Course Details
                       </h4>
                       <p>
@@ -253,7 +248,7 @@ export default function CourseDetails() {
                   {/* curriculam content  */}
 
                   <div
-                    className="tab-pane fade"
+                    className={`tab-pane fade ${classes.singleContent}`}
                     id="prod-curriculum"
                     role="tabpanel"
                     aria-labelledby="prod-curriculum-tab"
@@ -292,19 +287,13 @@ export default function CourseDetails() {
                             >
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -312,19 +301,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -332,19 +315,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -386,19 +363,13 @@ export default function CourseDetails() {
                             >
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -406,19 +377,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -426,19 +391,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -480,19 +439,13 @@ export default function CourseDetails() {
                             >
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -500,19 +453,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -520,19 +467,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -554,16 +495,14 @@ export default function CourseDetails() {
                     aria-labelledby="prod-instructor-tab"
                   >
                     <div className={classes.contents}>
-                      <h3 className={`${classes.commonClr} ${classes.title}`}>
-                        Instructors
-                      </h3>
+                      <h3>Instructors</h3>
                       <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-12 sm-mb-30">
                           <div className={classes.singleItem}>
                             <div className={classes.imgPart}>
                               <img src={courseVid} alt="" />
                             </div>
-                            <div className={classes.teacherContent}>
+                            <div className={classes.contetPart}>
                               <h4>
                                 <Link to="/">Jhon Pedrocas</Link>
                               </h4>
@@ -571,22 +510,22 @@ export default function CourseDetails() {
                               <ul className={classes.socialLinks}>
                                 <li>
                                   <Link to="/">
-                                    <i className="bx bxl-facebook" />
+                                    <i className="fa fa-facebook" />
                                   </Link>
                                 </li>
                                 <li>
                                   <Link to="/">
-                                    <i className="bx bxl-facebook" />
+                                    <i className="fa fa-twitter" />
                                   </Link>
                                 </li>
                                 <li>
                                   <Link to="/">
-                                    <i className="bx bxl-facebook" />
+                                    <i className="fa fa-linkedin" />
                                   </Link>
                                 </li>
                                 <li>
                                   <Link to="/">
-                                    <i className="bx bxl-facebook" />
+                                    <i className="fa fa-google-plus" />
                                   </Link>
                                 </li>
                               </ul>
@@ -598,7 +537,7 @@ export default function CourseDetails() {
                             <div className={classes.imgPart}>
                               <img src={courseVid} alt="" />
                             </div>
-                            <div className={classes.teacherContent}>
+                            <div className={classes.contetPart}>
                               <h4>
                                 <Link to="/">Jhon Pedrocas</Link>
                               </h4>
@@ -606,22 +545,22 @@ export default function CourseDetails() {
                               <ul className={classes.socialLinks}>
                                 <li>
                                   <Link to="/">
-                                    <i className="bx bxl-facebook" />
+                                    <i className="fa fa-facebook" />
                                   </Link>
                                 </li>
                                 <li>
                                   <Link to="/">
-                                    <i className="bx bxl-facebook" />
+                                    <i className="fa fa-twitter" />
                                   </Link>
                                 </li>
                                 <li>
                                   <Link to="/">
-                                    <i className="bx bxl-facebook" />
+                                    <i className="fa fa-linkedin" />
                                   </Link>
                                 </li>
                                 <li>
                                   <Link to="/">
-                                    <i className="bx bxl-facebook" />
+                                    <i className="fa fa-google-plus" />
                                   </Link>
                                 </li>
                               </ul>
@@ -635,7 +574,7 @@ export default function CourseDetails() {
                   {/* faq content  */}
 
                   <div
-                    className={`tab-pane fade `}
+                    className={`tab-pane fade ${classes.singleContent}`}
                     id="prod-faq"
                     role="tabpanel"
                     aria-labelledby="prod-faq-tab"
@@ -652,7 +591,7 @@ export default function CourseDetails() {
                             <h5 className="mb-0">
                               <button
                                 type="button"
-                                className="common-btn"
+                                className="btn btn-link acc-btn"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapse2One"
                                 aria-expanded="true"
@@ -674,19 +613,13 @@ export default function CourseDetails() {
                             >
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -694,19 +627,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -714,19 +641,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -746,7 +667,7 @@ export default function CourseDetails() {
                             <h5 className="mb-0">
                               <button
                                 type="button"
-                                className="common-btn"
+                                className="btn btn-link acc-btn"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapse2Two"
                                 aria-expanded="true"
@@ -758,7 +679,7 @@ export default function CourseDetails() {
                           </div>
 
                           <div
-                            id="collapse2Two"
+                            id="collapseTwo"
                             className="collapse "
                             aria-labelledby="headingOne"
                             data-parent="#accordion2Two"
@@ -768,19 +689,13 @@ export default function CourseDetails() {
                             >
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -788,19 +703,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -808,19 +717,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -840,7 +743,7 @@ export default function CourseDetails() {
                             <h5 className="mb-0">
                               <button
                                 type="button"
-                                className="common-btn"
+                                className="btn btn-link acc-btn"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapse2Three"
                                 aria-expanded="true"
@@ -852,7 +755,7 @@ export default function CourseDetails() {
                           </div>
 
                           <div
-                            id="collapse2Three"
+                            id="collapseThree"
                             className="collapse "
                             aria-labelledby="headingOne"
                             data-parent="#accordion2Two"
@@ -862,19 +765,13 @@ export default function CourseDetails() {
                             >
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -882,19 +779,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -902,19 +793,13 @@ export default function CourseDetails() {
                               </div>
                               <div className={classes.cardContent}>
                                 <div className={classes.leftContent}>
-                                  <p onClick={() => setOpen(true)}>
+                                  <a
+                                    className="popup-videos play-icon"
+                                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                                  >
                                     <i className="bx bx-play" />
                                     What is UI/ UX Design?
-                                  </p>
-                                  <div className="">
-                                    <ModalVideo
-                                      channel="youtube"
-                                      autoplay
-                                      isOpen={isOpen}
-                                      videoId="L61p2uyiMSo"
-                                      onClose={() => setOpen(false)}
-                                    />
-                                  </div>
+                                  </a>
                                 </div>
                                 <div className={classes.rightContent}>
                                   <p className={classes.length}>35 Minutes</p>
@@ -938,22 +823,14 @@ export default function CourseDetails() {
                     <div className={classes.content}>
                       {/* single review  */}
                       <div className={classes.reviewBox}>
-                        <h4
-                          className={`${classes.commonClr} ${classes.title} ${classes.reviewTitle}`}
-                        >
-                          Stephane Smith
-                        </h4>
+                        <h4>Stephane Smith</h4>
                         <div className={classes.rating}>
-                          <span>4.5</span>
-                          <span>
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                          </span>
-
-                          <span>256 Reviews</span>
+                          <span className="total-rating">4.5</span>{" "}
+                          <span className="fa fa-star" />
+                          <i className="bx bx-star" />
+                          <i className="bx bx-star" />
+                          <i className="bx bx-star" />
+                          <span className="fa bx-star" /> 256 Reviews
                         </div>
                         <p>
                           Phasellus enim magna, varius et commodo ut, ultricies
@@ -966,14 +843,10 @@ export default function CourseDetails() {
                         </p>
                         <ul className={classes.likeOption}>
                           <li>
-                            <span>
-                              <i className="bx bxs-like" />
-                            </span>
+                            <i className="bx bxs-like" />
                           </li>
                           <li>
-                            <span>
-                              <i className="bx bxs-dislike" />
-                            </span>
+                            <i className="bx bxs-dislike" />
                           </li>
                           <li>
                             <Link className={classes.report} to="/">
@@ -984,22 +857,14 @@ export default function CourseDetails() {
                       </div>
                       {/* single review  */}
                       <div className={classes.reviewBox}>
-                        <h4
-                          className={`${classes.commonClr} ${classes.title} ${classes.reviewTitle}`}
-                        >
-                          Anna Sthesia
-                        </h4>
+                        <h4>Stephane Smith</h4>
                         <div className={classes.rating}>
-                          <span>4.5</span>
-                          <span>
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                          </span>
-
-                          <span>256 Reviews</span>
+                          <span className="total-rating">4.5</span>{" "}
+                          <span className="fa fa-star" />
+                          <i className="bx bx-star" />
+                          <i className="bx bx-star" />
+                          <i className="bx bx-star" />
+                          <span className="fa bx-star" /> 256 Reviews
                         </div>
                         <p>
                           Phasellus enim magna, varius et commodo ut, ultricies
@@ -1012,14 +877,10 @@ export default function CourseDetails() {
                         </p>
                         <ul className={classes.likeOption}>
                           <li>
-                            <span>
-                              <i className="bx bxs-like" />
-                            </span>
+                            <i className="bx bxs-like" />
                           </li>
                           <li>
-                            <span>
-                              <i className="bx bxs-dislike" />
-                            </span>
+                            <i className="bx bxs-dislike" />
                           </li>
                           <li>
                             <Link className={classes.report} to="/">
@@ -1030,22 +891,14 @@ export default function CourseDetails() {
                       </div>
                       {/* single review  */}
                       <div className={classes.reviewBox}>
-                        <h4
-                          className={`${classes.commonClr} ${classes.title} ${classes.reviewTitle}`}
-                        >
-                          Petey Cruiser
-                        </h4>
+                        <h4>Stephane Smith</h4>
                         <div className={classes.rating}>
-                          <span>4.5</span>
-                          <span>
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                            <i className="bx bx-star" />
-                          </span>
-
-                          <span>256 Reviews</span>
+                          <span className="total-rating">4.5</span>{" "}
+                          <span className="fa fa-star" />
+                          <i className="bx bx-star" />
+                          <i className="bx bx-star" />
+                          <i className="bx bx-star" />
+                          <span className="fa bx-star" /> 256 Reviews
                         </div>
                         <p>
                           Phasellus enim magna, varius et commodo ut, ultricies
@@ -1058,14 +911,10 @@ export default function CourseDetails() {
                         </p>
                         <ul className={classes.likeOption}>
                           <li>
-                            <span>
-                              <i className="bx bxs-like" />
-                            </span>
+                            <i className="bx bxs-like" />
                           </li>
                           <li>
-                            <span>
-                              <i className="bx bxs-dislike" />
-                            </span>
+                            <i className="bx bxs-dislike" />
                           </li>
                           <li>
                             <Link className={classes.report} to="/">
@@ -1090,63 +939,55 @@ export default function CourseDetails() {
                       alt="extensive-knowledge"
                     />
                   </div>
-                  <div className={classes.playerContent}>
-                    <PlayBtn handleClick={setOpen}>
-                      <i className="bx bx-play" />
-                    </PlayBtn>
-
-                    <h4>Preview this course</h4>
-                  </div>
+                  <a
+                    className="popup-videos"
+                    href="https://www.youtube.com/watch?v=atMUy_bPoQI"
+                  >
+                    <i className="bx bx-play" />
+                  </a>
+                  <h4>Preview this course</h4>
                 </div>
                 <div className={classes.courseFeature}>
                   <ul>
                     <li>
-                      <span className="label">
-                        <i className="bx bx-file-blank" />
-                        Lectures
-                      </span>
+                      <i className="fa fa-files-o" />
+                      <span className="label">Lectures</span>
                       <span className="value">3</span>
                     </li>
 
                     <li>
-                      <span className="label">
-                        <i className="bx bx-file-blank" />
-                        Quizzes
-                      </span>
+                      <i className="fa fa-puzzle-piece" />
+                      <span className="label">Quizzes</span>
                       <span className="value">0</span>
                     </li>
 
                     <li>
-                      <span className="label">
-                        <i className="bx bx-file-blank" /> Duration
-                      </span>
+                      <i className="fa fa-clock-o" />
+                      <span className="label">Duration</span>
                       <span className="value">10 week </span>
                     </li>
 
                     <li>
-                      <span className="label">
-                        <i className="bx bx-file-blank" />
-                        Students
-                      </span>
+                      <i className="fa fa-users" />
+                      <span className="label">Students</span>
                       <span className="value">21</span>
                     </li>
 
                     <li>
-                      <span className="label">
-                        <i className="bx bx-file-blank" /> Assessments
-                      </span>
+                      <i className="fa fa-check-square-o" />
+                      <span className="label">Assessments</span>
                       <span className="value">Yes</span>
                     </li>
                   </ul>
                 </div>
 
                 <div className={classes.btnPart}>
-                  <Button to="/" bgColor="orange">
+                  <Link to="/" className="btn readon2 orange">
                     $35
-                  </Button>
-                  <Button to="/" bgColor="orange">
+                  </Link>
+                  <Link to="/" className="btn readon2 orange-transparent">
                     Buy Now
-                  </Button>
+                  </Link>
                 </div>
               </div>
             </div>

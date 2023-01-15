@@ -1,0 +1,355 @@
+.introTabs {
+  background-color: var(--white-clr);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.tabLists {
+  border-bottom: 1px solid var(--light-clr) !important;
+}
+
+.tabLists li {
+  position: relative;
+  text-align: center;
+  width: 20%;
+  margin-bottom: -1px;
+  box-sizing: border-box;
+}
+
+.tabLists li button {
+  position: relative;
+  display: block;
+  padding: 13px 0;
+  width: 100%;
+  font-family: var(--poppins-med);
+  font-size: var(--font-15);
+  color: var(--fade-clr);
+  border: 1px solid var(--light-clr) !important;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 500ms ease;
+}
+
+.tabLists li button:hover {
+  color: var(--white-clr);
+  background-color: var(--orange-clr);
+
+  border-color: var(--orange-clr) !important;
+}
+
+/* tabContent */
+
+.singleContent {
+  padding: 30px 40px;
+}
+
+.commonClr,
+.studentDetails li {
+  color: var(--dark-clr);
+  font-family: var(--nunito-semi);
+}
+
+.title {
+  font-size: var(--font-24);
+}
+
+.contents p {
+  margin-top: 20px;
+}
+
+.studentDetails {
+  margin: 20px 0;
+  column-gap: 60px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.studentDetails li {
+  position: relative;
+  font-size: var(--font-18);
+}
+
+.studentDetails li i {
+  color: var(--orange-clr);
+}
+
+.subtitle {
+  font-size: var(--font-22);
+}
+
+.reviewLists {
+  margin-top: 20px;
+}
+
+.reviewLists li {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 10px;
+}
+
+.reviewLists li:last-child {
+  margin-bottom: 0;
+}
+
+.reviewLists li i {
+  display: inline-block;
+  padding-top: 2px;
+  color: var(--orange-clr);
+}
+
+.reviewLists li span {
+  font-size: var(--font-15);
+}
+
+.requireText {
+  margin-top: 20px;
+}
+
+/* accordionBox  */
+
+.accordionBox {
+}
+
+.card {
+  border: none !important;
+}
+
+.cardHeader {
+  padding: 24px 16px;
+  background-color: var(--white-clr);
+  border: none !important;
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.1);
+}
+
+.cardHeader button {
+  display: block;
+  width: 100%;
+  text-align: start;
+  font-size: var(--font-18);
+  text-transform: capitalize;
+}
+
+.cardBody {
+  padding: 30px 30px 30px 40px;
+  /* background-color: var(--white-clr); */
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cardContent:last-child {
+  margin-bottom: 0;
+}
+
+.rightContent p {
+  margin: 0;
+}
+
+.leftContent p {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-family: var(--nunito-semi);
+  color: var(--fade-clr);
+}
+
+.leftContent p i {
+  font-size: var(--font-28);
+  color: var(--orange-clr);
+}
+
+/* instructor  */
+
+.singleItem {
+  position: relative;
+  margin-top: 30px;
+}
+
+.teacherContent {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-clr);
+  background-color: var(--orange-clr);
+  opacity: 0;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.teacherContent h4 {
+  margin-bottom: 8px;
+}
+
+.teacherContent h4 a {
+  font-family: var(--nunito-bold);
+  font-size: var(--font-24);
+  color: inherit;
+}
+
+.socialLinks {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.socialLinks li a {
+  font-size: var(--font-22);
+  color: inherit;
+}
+
+.teacherContent a {
+  transition: 0.3s ease-in-out;
+}
+
+.teacherContent a:hover {
+  color: var(--dark-clr);
+}
+
+.singleItem:hover .teacherContent {
+  top: 50%;
+  opacity: 0.9;
+}
+
+/* .reviews */
+
+.reviewBox {
+  margin-bottom: 40px;
+}
+
+.reviewBox:last-child {
+  margin-bottom: 0;
+}
+
+.rating {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: var(--font-18);
+  color: var(--dark-clr);
+}
+
+.rating i {
+  color: var(--orange-clr);
+}
+
+.helpful {
+  font-family: var(--nunito-semi);
+  font-size: var(--font-20);
+  color: var(--dark-clr);
+  margin: 20px 0;
+}
+
+.likeOption {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.likeOption li span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--dark-clr);
+  background-color: var(--light-blue-clr);
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.likeOption li span:hover {
+  color: var(--orange-clr);
+}
+
+.likeOption li a {
+  color: var(--dark-clr);
+  transition: 0.3s ease-in-out;
+}
+
+.likeOption li a:hover {
+  color: var(--blue-clr);
+}
+
+/* wedgetContent */
+
+.wedgetVideo {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.playerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.playerContent h4 {
+  margin-bottom: 20px;
+  font-size: var(--font-18);
+  color: var(--white-clr);
+}
+
+.courseFeature {
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: var(--white-clr);
+}
+
+.courseFeature ul li {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courseFeature ul li:last-child {
+  margin-bottom: 0;
+}
+
+.courseFeature ul li span:first-child {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.courseFeature ul li span i {
+  color: var(--orange-clr);
+}
+
+.btnPart {
+  padding: 30px;
+  background-color: var(--white-clr);
+}
+
+.btnPart a {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.btnPart a:last-child {
+  margin-bottom: 0;
+}

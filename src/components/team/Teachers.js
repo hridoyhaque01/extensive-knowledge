@@ -28,7 +28,7 @@ export default function Teachers() {
                 </div>
                 <div className={classes.teacherDetails}>
                   <h2>
-                    <Link to="/team/asss"> Jhon Pedrocas</Link>
+                    <Link to="/team/team1"> Jhon Pedrocas</Link>
                   </h2>
                   <h3>Professor</h3>
                   <ul

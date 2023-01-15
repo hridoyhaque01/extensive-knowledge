@@ -181,3 +181,17 @@ img {
 .nav-pills .nav-link.active {
   background-color: var(--orange-clr) !important;
 }
+
+/* tab btn  */
+
+.tabBtn.active {
+  color: var(--white-clr) !important;
+  background-color: var(--orange-clr) !important;
+  border-color: var(--orange-clr) !important;
+}
+
+/* curriculam part  */
+
+.cardHeader h5 {
+  padding: 26px 10px !important;
+}

@@ -1,0 +1,178 @@
+.imagePart {
+  padding: 30px;
+  background-color: var(--white-clr);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.imagePart {
+  text-align: center;
+}
+
+.img {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.teamContent {
+  margin-top: 30px;
+}
+
+.teamContent h3 {
+  font-family: var(--nunito-bold);
+  font-size: var(--font-24);
+  color: var(--dark-clr);
+}
+
+.teamContent p {
+  margin: 10px 0 16px;
+}
+
+.personalInfo {
+  gap: 10px;
+}
+
+.personalInfo li {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.personalInfo li a {
+  font-size: var(--font-15);
+  color: var(--fade-clr);
+  transition: all 0.3s ease-in-out;
+}
+
+.personalInfo li a:hover {
+  color: var(--orange-clr);
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  margin: 0 6px;
+  font-size: var(--font-24);
+  color: var(--fade-clr);
+  transition: all 0.3s ease-in-out;
+}
+
+.social a:hover {
+  color: var(--orange-clr);
+}
+
+/* teamRightContent  */
+
+.teamRightContent {
+  padding-left: 60px;
+}
+
+.teamRightContent h2 {
+  font-size: var(--font-34);
+  font-family: var(--nunito-bold);
+  color: var(--dark-clr);
+}
+
+.teamSkill h3,
+.contentPart h3,
+.teamRightContent h4,
+.teamRightContent h5,
+.studentDetails li {
+  font-family: var(--nunito-semi);
+  color: var(--dark-clr);
+}
+
+.teamRightContent h4 {
+  margin: 14px 0 26px;
+  font-size: var(--font-22);
+}
+
+.studentDetails {
+  column-gap: 60px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.studentDetails li {
+  position: relative;
+}
+
+.studentDetails li i {
+  color: var(--orange-clr);
+}
+
+.teamRightContent h5 {
+  font-size: var(--font-28);
+  margin: 26px 0;
+}
+
+.teamSkill {
+  margin-top: 26px;
+}
+
+.teamSkill h3 {
+  font-size: var(--font-24);
+}
+
+.singleProgress:nth-child(odd) {
+  padding-left: 0;
+}
+
+.customProgress {
+  margin-top: 45px;
+  height: 9px;
+  border: 1px solid var(--orange-clr);
+  border-radius: 0;
+  overflow: visible;
+  padding: 1px;
+}
+
+.progressBar {
+  overflow: visible;
+  position: relative;
+  background-color: var(--orange-clr);
+}
+
+.progressBar .label,
+.progressBar .percentage {
+  position: absolute;
+  top: -28px;
+  font-family: var(--poppins-med);
+}
+
+.progressBar .label {
+  left: 0;
+  color: var(--fade-clr);
+  font-size: var(--font-15);
+}
+
+.progressBar .percentage {
+  right: -13px;
+  padding: 4px 2px;
+  font-size: 10px;
+  line-height: 10px;
+  background-color: var(--orange-clr);
+}
+
+.progressBar .percentage::after {
+  content: "";
+  position: absolute;
+  border: 6px solid transparent;
+  left: 50%;
+  border-top-color: #ff5421;
+  top: 17px;
+  transform: translateX(-50%);
+}
+
+/* contentPart  */
+
+.contentPart {
+  margin-top: 40px;
+}
+
+.contentPart h3 {
+  margin-bottom: 26px;
+  font-size: var(--font-28);
+}

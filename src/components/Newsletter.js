@@ -15,7 +15,7 @@ export default function Newsletter() {
             <div className="input-group">
               <input
                 type="email"
-                className="form-control"
+                className="form-control cmnInput"
                 placeholder="enter your email"
               />
               <button

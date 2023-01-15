@@ -16,7 +16,7 @@ export default function TeamDetails() {
 
       <Section padding="100px 0 220px">
         <div className="container">
-          <div className="row">
+          <div className="row ">
             <div className="col-lg-5">
               <div className={classes.imagePart}>
                 <div className={classes.img}>
@@ -29,24 +29,22 @@ export default function TeamDetails() {
                 <div className={classes.teamContent}>
                   <h3>Eliena Rose</h3>
                   <p>Chief Instructor</p>
-                  <ul className={classes.personalInfo}>
+                  <ul
+                    className={`d-flex align-items-center justify-content-between ${classes.personalInfo}`}
+                  >
                     <li className="email">
-                      <span>
-                        <i className="bx bxs-envelop" />
-                      </span>
+                      <i className="bx bxs-envelope" />
                       <a href="mailto:info@yourwebsite.com">
                         info@yourwebsite.com
                       </a>
                     </li>
                     <li className="phone">
-                      <span>
-                        <i className="bx bxs-phone" />
-                      </span>
+                      <i className="bx bxs-phone" />
                       <a href="tel:+088-589-8745">(+088) 589-8745</a>
                     </li>
                   </ul>
                 </div>
-                <div className="social-box">
+                <div className={classes.social}>
                   <Link to="/">
                     <i className="bx bxl-facebook" />
                   </Link>
@@ -62,11 +60,13 @@ export default function TeamDetails() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-7">
-              <div className={classes.teamContent}>
+            <div className={`col-lg-7 ${classes.extraPadding}`}>
+              <div className={classes.teamRightContent}>
                 <h2>Eliena Rose</h2>
                 <h4>A certified instructor From Educavo</h4>
-                <ul className="student-list">
+                <ul
+                  className={`d-flex align-items-center ${classes.studentDetails}`}
+                >
                   <li>23,564 Total Students</li>
                   <li>
                     <span className="theme_color">4.5</span>
@@ -100,8 +100,23 @@ export default function TeamDetails() {
                           aria-valuemax="100"
                           style={{ width: "95%" }}
                         >
-                          <span className="pb-label">Accounting</span>
-                          <span className="pb-percent">95%</span>
+                          <span className={classes.label}>Accounting</span>
+                          <span className={classes.percentage}>95%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className={`col-md-6 ${classes.singleProgress}`}>
+                      <div className={`progress ${classes.customProgress}`}>
+                        <div
+                          className={`progress-bar ${classes.progressBar}`}
+                          role="progressbar"
+                          aria-valuenow="85"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          style={{ width: "85%" }}
+                        >
+                          <span className={classes.label}>Accounting</span>
+                          <span className={classes.percentage}>85%</span>
                         </div>
                       </div>
                     </div>
@@ -115,8 +130,8 @@ export default function TeamDetails() {
                           aria-valuemax="100"
                           style={{ width: "95%" }}
                         >
-                          <span className="pb-label">Accounting</span>
-                          <span className="pb-percent">95%</span>
+                          <span className={classes.label}>Accounting</span>
+                          <span className={classes.percentage}>95%</span>
                         </div>
                       </div>
                     </div>
@@ -130,23 +145,8 @@ export default function TeamDetails() {
                           aria-valuemax="100"
                           style={{ width: "95%" }}
                         >
-                          <span className="pb-label">Accounting</span>
-                          <span className="pb-percent">95%</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={`col-md-6 ${classes.singleProgress}`}>
-                      <div className={`progress ${classes.customProgress}`}>
-                        <div
-                          className={`progress-bar ${classes.progressBar}`}
-                          role="progressbar"
-                          aria-valuenow="95"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                          style={{ width: "95%" }}
-                        >
-                          <span className="pb-label">Accounting</span>
-                          <span className="pb-percent">95%</span>
+                          <span className={classes.label}>Accounting</span>
+                          <span className={classes.percentage}>95%</span>
                         </div>
                       </div>
                     </div>
