@@ -1,0 +1,14 @@
+/* .counter:first-child .sinlgeCount {
+  background: red;
+} */
+
+.counter .sinlgeCount {
+  padding: 60px 0;
+  row-gap: 10px;
+  background: url("../../images/about/bg1.png") no-repeat center center/cover;
+  border-radius: 6px;
+}
+
+.sinlgeCount p {
+  font-size: var(--font-20);
+}

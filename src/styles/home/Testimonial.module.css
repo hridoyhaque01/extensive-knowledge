@@ -1,0 +1,23 @@
+.singleSlider {
+  padding: 30px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+}
+
+.quote {
+  width: 40px;
+}
+
+.writer {
+  margin-top: 24px;
+  column-gap: 20px;
+}
+
+.writerImg {
+  border-radius: 50%;
+}
+
+.writerDetails h3,
+.writerDetails p {
+  text-transform: capitalize;
+}

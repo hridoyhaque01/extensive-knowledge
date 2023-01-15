@@ -1,0 +1,17 @@
+.banner {
+  padding: 125px 0 425px;
+  text-align: center;
+  background: url("../../images/home1.jpg") no-repeat center center/cover;
+}
+
+.banner h1 {
+  font-family: var(--poppins-bold);
+  font-size: var(--font-58);
+  color: var(--dark-clr);
+  line-height: 78px;
+}
+
+.banner p {
+  font-size: var(--font-20);
+  padding: 0 120px;
+}

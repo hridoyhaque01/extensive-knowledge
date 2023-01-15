@@ -1,0 +1,60 @@
+.donation h1 {
+  text-transform: none;
+  margin-top: 20px;
+}
+
+.testimonialTexts {
+  padding-left: 60px;
+}
+
+.singleTest {
+  margin-bottom: 30px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  column-gap: 30px;
+  background-color: var(--light-blue-clr);
+  border-radius: 8px;
+}
+
+.singleTest:last-child {
+  margin-bottom: 0;
+}
+
+.writerImg {
+  /* max-width: 210px; */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.testDetails h2 {
+  position: relative;
+  font-family: var(--nunito-semi);
+  font-size: var(--font-22);
+  color: var(--dark-clr);
+}
+
+.testDetails h2 span {
+  display: inline-block;
+}
+
+.testDetails h2 .topQuote {
+  transform: translateX(-4px) translateY(-10px);
+}
+
+.testDetails h2 .bottomQuote {
+  transform: translateX(4px) translateY(10px);
+}
+
+.testDetails h3 {
+  margin: 20px 0 4px;
+  font-family: var(--nunito-semi);
+  font-size: var(--font-18);
+  color: var(--dark-clr);
+  text-transform: capitalize;
+}
+
+.testDetails {
+  font-size: var(--font-15);
+  text-transform: capitalize;
+}

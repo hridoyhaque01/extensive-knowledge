@@ -1,0 +1,16 @@
+.addBtn {
+  padding: 14px 34px;
+  color: var(--white-clr);
+  text-transform: capitalize;
+  background-color: var(--orange-clr) !important;
+  border-radius: 4px;
+}
+
+.addBtn:hover {
+  color: var(--white-clr);
+  background-color: var(--orange-hover-clr) !important;
+}
+
+.addBtn.blue {
+  background-color: red !important;
+}

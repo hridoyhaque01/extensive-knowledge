@@ -1,0 +1,57 @@
+.transform {
+  transform: translateY(-65px);
+}
+
+.aboutDetails {
+  padding: 70px 40px 40px;
+  background-color: var(--light-blue-clr);
+  border-radius: 10px;
+}
+
+.signPart {
+  margin-top: 40px;
+  column-gap: 40px;
+}
+
+.authorPart img {
+  max-width: 132px;
+  height: auto;
+}
+
+.authorPart p {
+  font-size: var(--font-18);
+}
+
+/* notice  */
+
+.noticeTitle h2 {
+  background: var(--blue-clr);
+  font-size: var(--font-24);
+  text-transform: uppercase;
+  padding: 18px 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.singleNotice {
+  margin-top: 12px;
+  column-gap: 20px;
+  background: var(--light-blue-clr);
+  border-radius: 3px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.date span {
+  font-size: var(--font-18);
+  color: var(--blue-clr);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.notice p {
+  font-family: var(--poppins-med);
+  font-size: var(--font-15);
+}

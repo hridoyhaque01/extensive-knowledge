@@ -1,0 +1,100 @@
+.singleInfo {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: var(--light-clr);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.infoIcon {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--orange-hover-clr);
+  border-radius: 50%;
+}
+
+.infoIcon i {
+  font-size: var(--font-28);
+  color: var(--orange-clr);
+}
+
+.infoContent h5 {
+  font-family: var(--nunito-semi);
+  font-size: var(--font-16);
+}
+
+.infoContent h4 {
+  font-family: var(--nunito-semi);
+  font-size: var(--font-20);
+  color: var(--dark-clr);
+}
+
+.infoContent h4 a {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+.infoContent h4 a:hover {
+  color: var(--orange-clr);
+}
+
+.mail h4 {
+  max-width: 190px;
+  word-wrap: break-word;
+}
+
+/* formContent  */
+
+.formContent {
+  margin-top: 80px;
+}
+
+.map {
+  height: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contactForm {
+  padding: 40px;
+  background-color: var(--light-clr);
+}
+
+.contactForm h2 {
+  font-family: var(--nunito-semi);
+  font-size: var(--font-38);
+  color: var(--dark-clr);
+}
+
+.contactForm form textarea {
+  padding: 13px 10px 13px 14px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.singleInput {
+  margin-bottom: 20px;
+  padding: 0;
+  padding-right: 30px;
+}
+
+.singleInput:last-child {
+  padding-right: 0;
+}
+
+.contactForm form textarea::placeholder {
+  text-transform: capitalize;
+}
+
+.contactForm form textarea {
+  height: 210px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,85 @@
+.sectionTop {
+  margin-bottom: 70px;
+}
+
+.singleTeacher {
+  position: relative;
+  overflow: hidden;
+}
+
+.singleTeacher::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  transform: translate(-50%, 100%) scale(0.1);
+  background-color: var(--orange-clr);
+  opacity: 0;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.teacherDetails {
+  position: absolute;
+  bottom: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100% !important;
+  height: 320px !important;
+  padding: 30px;
+  background-color: var(--white-clr);
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.teacherDetails h2 {
+  font-family: var(--nunito-bold);
+  font-size: var(--font-24);
+}
+
+.teacherDetails h2 a {
+  color: var(--dark-clr);
+}
+
+.teacherDetails h3 {
+  margin: 10px 0 20px;
+  font-family: var(--nunito-semi);
+  font-size: var(--font-16);
+}
+
+.social {
+  column-gap: 24px;
+}
+
+.social li a {
+  font-size: var(--font-20);
+  color: var(--white-clr);
+}
+
+.singleTeacher:hover .teacherDetails {
+  bottom: unset;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: unset !important;
+  height: unset !important;
+  background-color: transparent !important;
+  white-space: nowrap;
+  border-radius: unset;
+  padding: 0;
+}
+
+.singleTeacher:hover:after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.9;
+}
+
+.singleTeacher:hover h2 a,
+.singleTeacher:hover h3 {
+  color: var(--white-clr) !important;
+}

@@ -1,0 +1,65 @@
+.sidebar {
+  padding: 20px 0 20px 20px;
+}
+
+.closeBtn {
+  width: max-content;
+  font-size: 24px;
+}
+
+.galary {
+  margin: 45px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.singleImg {
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.img {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.singleImg:hover .img {
+  transform: scale(1.06) !important;
+}
+
+.map {
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.social {
+  margin-top: 45px;
+}
+
+.social ul {
+  column-gap: 30px;
+}
+
+.social ul li {
+  list-style: none;
+}
+
+.social ul li a {
+  font-size: var(--font-24);
+  color: var(--dark-clr);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--light-clr);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--fade-clr);
+  border-radius: 10px;
+}

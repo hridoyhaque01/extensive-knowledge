@@ -1,0 +1,56 @@
+.header {
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+.navList {
+  gap: 45px;
+}
+
+.navList li a {
+  display: inline-block;
+  position: relative;
+  padding: 0 !important;
+  font-family: var(--poppins-med);
+  color: var(--dark-clr);
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.navList li a:hover {
+  color: var(--blue-clr);
+}
+
+/* .navList li a.active {
+} */
+
+.sidebar {
+  column-gap: 30px;
+}
+
+.sidebar .navList {
+  column-gap: 14px;
+}
+
+.menuBtn {
+  font-size: var(--font-24);
+}
+
+@media screen and (max-width: 991px) {
+  .menu {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menuList {
+    display: inline-flex;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+  }
+}

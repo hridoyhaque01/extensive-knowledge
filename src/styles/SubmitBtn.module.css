@@ -1,0 +1,32 @@
+.submitBtn {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.orange {
+  color: var(--white-clr);
+  background-color: var(--orange-clr);
+}
+
+.orange:hover {
+  color: var(--white-clr);
+  background-color: var(--orange-hover-clr);
+}
+
+/* blue button  */
+
+.blue {
+  color: var(--white-clr);
+  background-color: var(--blue-clr);
+}
+
+.blue:hover {
+  color: var(--white-clr);
+  background-color: var(--blue-hover-clr);
+}

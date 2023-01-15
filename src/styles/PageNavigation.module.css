@@ -1,0 +1,27 @@
+.pageNavigation {
+  font-family: var(--nunito-bold);
+  text-transform: capitalize;
+  background: url("../images/banner.jpg") no-repeat center center/cover;
+}
+
+.breadcrumbs {
+  row-gap: 14px;
+}
+
+.breadcrumbs h1 {
+  font-size: var(--font-48);
+  color: var(--orange-clr);
+}
+
+.breadcrumbNav ol li {
+  color: var(--fade-clr);
+}
+
+.breadcrumbNav ol li a {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumbNav ol li a:hover {
+  color: var(--orange-clr);
+}

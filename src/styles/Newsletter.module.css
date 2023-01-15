@@ -1,0 +1,27 @@
+.newsletter {
+  position: absolute;
+  background: url("../images/newsletter-bg.jpg") no-repeat center center/cover;
+  padding: 60px 70px;
+  border-radius: 4px;
+  transform: translateY(-140px);
+}
+
+.form input::placeholder {
+  text-transform: capitalize;
+}
+
+.newsletterBtn {
+  padding: 0 28px;
+  font-size: var(--font-28);
+  color: var(--white-clr);
+  background-color: var(--nevy-clr) !important;
+  border-radius: 0 6px 6px 0;
+}
+
+.newsletterBtn i {
+  transform: rotate(-20deg);
+}
+
+.newsletterBtn:hover {
+  background-color: var(--nevy-hover-clr) !important;
+}

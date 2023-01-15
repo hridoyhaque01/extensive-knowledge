@@ -1,0 +1,33 @@
+.signleCat {
+  padding: 25px 20px;
+  background-color: var(--white-clr);
+  column-gap: 24px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.catImg {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background: rgba(22, 170, 202, 0.2);
+  transition: all 0.3s ease;
+}
+
+.catImg img {
+  width: 30px;
+  height: auto;
+}
+
+.signleCat:hover {
+  background-color: var(--blue-clr);
+}
+
+.signleCat:hover .catImg {
+  background-color: var(--white-clr);
+}
+
+.signleCat:hover h3,
+.signleCat:hover p {
+  color: var(--white-clr);
+}

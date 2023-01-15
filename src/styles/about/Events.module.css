@@ -1,0 +1,45 @@
+.eventLeft {
+  position: relative;
+}
+
+.eventTabs {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+}
+
+.tabItem {
+  margin-bottom: 20px;
+}
+
+.tabItem:last-child {
+  margin-bottom: 0;
+}
+
+.tabBtn {
+  padding: 24px 20px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  color: var(--white-clr);
+  background-color: var(--nevy-clr) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabBtn:hover {
+  color: var(--white-clr);
+  background-color: var(--orange-clr) !important;
+}
+
+.tabBtn span {
+  font-family: var(--nunito-bold);
+  font-size: var(--font-20);
+  text-transform: capitalize;
+}
+
+.tabBtn span i {
+  font-size: var(--font-34);
+}

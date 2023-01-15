@@ -1,0 +1,30 @@
+.formData {
+  padding: 60px 0 30px;
+  background: var(--light-clr);
+  border-radius: 10px;
+}
+
+.formData h2 {
+  font-family: var(--nunito-bold);
+  font-size: var(--font-38);
+  color: var(--dark-clr);
+  text-align: center;
+}
+
+.formData form {
+  width: 480px;
+  margin: 40px auto 0;
+}
+
+.singleInput {
+  margin-bottom: 20px;
+}
+
+.formData p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.formData p a {
+  color: var(--orange-clr);
+}

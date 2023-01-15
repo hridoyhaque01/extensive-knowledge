@@ -1,0 +1,9 @@
+.aboutDetails p {
+  margin-top: 20px;
+  font-size: var(--font-15);
+}
+
+.detailsHead {
+  font-family: var(--poppins-med);
+  font-size: var(--font-18) !important;
+}

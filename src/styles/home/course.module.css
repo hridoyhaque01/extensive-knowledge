@@ -1,0 +1,52 @@
+.singleCourse {
+  background-color: var(--white-clr);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.courseDetails {
+  padding: 24px;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.price span:first-child {
+  margin-right: 10px;
+  padding: 4px 20px;
+  color: var(--white-clr);
+  background-color: var(--blue-clr);
+  border-radius: 3px;
+}
+
+.priceTitle {
+  font-family: var(--nunito-bold);
+  font-size: var(--font-20);
+  line-height: 24px;
+  color: var(--dark-clr);
+  transition: all 0.3s ease-in-out;
+}
+
+.priceTitle:hover {
+  color: var(--blue-clr);
+}
+
+.courseFooter {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.courseFooter p span:first-child {
+  margin-right: 5px;
+}
+
+.courseFooter p:nth-child(2) span:first-child {
+  color: var(--orange-clr);
+}
+
+.courseBtn {
+  margin-left: auto;
+  border-radius: 5px !important;
+}

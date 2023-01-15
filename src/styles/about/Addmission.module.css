@@ -1,0 +1,54 @@
+/* .addmission {
+} */
+
+.addVideo {
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  background: url("../../images/about/left-bg2.png") no-repeat center
+    center/cover;
+}
+
+.vidContent {
+  column-gap: 16px;
+  color: var(--white-clr);
+  cursor: pointer;
+}
+
+.play {
+  font-size: var(--font-58);
+  line-height: 58px;
+}
+
+.addVideo h3 {
+  font-family: var(--poppins-semi);
+  font-size: var(--font-22);
+}
+
+.addVideo h3 span {
+  /* color: var(--orange-clr); */
+  text-transform: capitalize;
+}
+
+.vidContent:hover {
+  color: var(--white-clr);
+}
+
+.addDetails {
+  padding: 110px 40px;
+  background: url("../../images/about/admission.png") no-repeat center
+    center/cover;
+}
+
+.addBtn {
+  padding: 14px 34px;
+  color: var(--white-clr);
+  text-transform: capitalize;
+  background-color: var(--orange-clr) !important;
+  border-radius: 4px;
+}
+
+.addBtn:hover {
+  color: var(--white-clr);
+  background-color: var(--orange-hover-clr) !important;
+}
