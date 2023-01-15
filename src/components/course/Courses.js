@@ -24,7 +24,7 @@ export default function Courses() {
 
   return (
     <>
-      <PageNavigation pageName="blog" />
+      <PageNavigation pageName="course" />
       <Section padding="100px 0 220px" className="text-center">
         <div className="container ">
           <div className="row gy-4 ">
@@ -47,7 +47,7 @@ export default function Courses() {
                     <div className={classes.courseName}>
                       <h2>{currentEl.tag}</h2>
                       <h3>
-                        <Link to="/course/12a">{currentEl.title}</Link>
+                        <Link to="/courses/12a">{currentEl.title}</Link>
                       </h3>
                     </div>
                     <div

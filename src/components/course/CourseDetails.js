@@ -8,7 +8,7 @@ export default function CourseDetails() {
     <>
       <PageNavigation pageName="course details">
         <li className="breadcrumb-item">
-          <Link to="/course">teacher</Link>
+          <Link to="/courses">courses</Link>
         </li>
       </PageNavigation>
 

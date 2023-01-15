@@ -2,9 +2,9 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Blogs from "./components/blog/Blogs";
 import CourseDetails from "./components/course/CourseDetails";
+import Courses from "./components/course/Courses";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Courses from "./components/home/Courses";
 import Teachers from "./components/team/Teachers";
 import TeamDetails from "./components/team/TeamDetails";
 import About from "./pages/About";
@@ -27,8 +27,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/*" element={<Course />}>
-          <Route path="Course" element={<Courses />} />
-          <Route path="Course/:id" element={<CourseDetails />} />
+          <Route path="courses" element={<Courses />} />
+          <Route path="courses/:id" element={<CourseDetails />} />
         </Route>
         <Route path="/*" element={<Team />}>
           <Route path="team" element={<Teachers />} />
