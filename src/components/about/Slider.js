@@ -7,9 +7,14 @@ import classes from "../../styles/about/Slider.module.css";
 
 export default function Slider() {
   return (
-    <Section padding="100px 0 220px">
+    <Section padding="100px 0 220px" className="btmSec">
       <div className="container">
-        <OwlCarousel className="owl-theme" items={5} loop margin={50}>
+        <OwlCarousel
+          className="owl-theme"
+          responsive={{ 0: { items: 2 }, 768: { items: 4 }, 992: { items: 5 } }}
+          loop
+          margin={50}
+        >
           {SliderData.map((currentEl) => (
             <div className="item" key={currentEl.id}>
               <Link to={currentEl.link} className={classes.singleSlider}>

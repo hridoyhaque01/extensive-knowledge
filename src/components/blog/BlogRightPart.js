@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "../../styles/blog/Blogs.module.css";
 
+import {
+  ArchiveData,
+  CategoriesData,
+  MetaData,
+  Recentdata,
+} from "../../database/BlogPageData";
+
 export default function BlogRightPart() {
   return (
     <div className={classes.wedgetArea}>
@@ -26,21 +33,11 @@ export default function BlogRightPart() {
       >
         <h3>Recent Posts</h3>
         <ul>
-          <li>
-            <Link to="/">University while the lovely valley team work</Link>
-          </li>
-          <li>
-            <Link to="/">High school program starting soon 2021</Link>
-          </li>
-          <li>
-            <Link to="/">Modern School the lovely valley team work</Link>
-          </li>
-          <li>
-            <Link to="/">While the lovely valley team work</Link>
-          </li>
-          <li>
-            <Link to="/">This is a great source of content for anyone…</Link>
-          </li>
+          {Recentdata.map((currentEl) => (
+            <li key={currentEl.id}>
+              <Link to="/">{currentEl.linkText}</Link>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -51,12 +48,11 @@ export default function BlogRightPart() {
       >
         <h3>Archives</h3>
         <ul>
-          <li>
-            <Link to="/">September 2020</Link>
-          </li>
-          <li>
-            <Link to="/">September 2020</Link>
-          </li>
+          {ArchiveData.map((currentEl) => (
+            <li key={currentEl.id}>
+              <Link to="/">{currentEl.linkText}</Link>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -67,21 +63,11 @@ export default function BlogRightPart() {
       >
         <h3>Categories</h3>
         <ul>
-          <li>
-            <Link to="/">College</Link>
-          </li>
-          <li>
-            <Link to="/">High School</Link>
-          </li>
-          <li>
-            <Link to="/">Primary</Link>
-          </li>
-          <li>
-            <Link to="/">School</Link>
-          </li>
-          <li>
-            <Link to="/">University</Link>
-          </li>
+          {CategoriesData.map((currentEl) => (
+            <li key={currentEl.id}>
+              <Link to="/">{currentEl.linkText}</Link>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -92,18 +78,11 @@ export default function BlogRightPart() {
       >
         <h3>Meta</h3>
         <ul>
-          <li>
-            <Link to="/">Log in</Link>
-          </li>
-          <li>
-            <Link to="/">Entries feed</Link>
-          </li>
-          <li>
-            <Link to="/">Comments feed</Link>
-          </li>
-          <li>
-            <Link to="/">WordPress.org</Link>
-          </li>
+          {MetaData.map((currentEl) => (
+            <li key={currentEl.id}>
+              <Link to="/">{currentEl.linkText}</Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

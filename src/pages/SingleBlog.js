@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import BlogRightPart from "../components/blog/BlogRightPart";
 import Button from "../components/buttons/Submit";
 import PageNavigation from "../components/PageNavigation";
-import src from "../images/blogs/blog-img-1.jpg";
+import src from "../images/blogs/blog1.jpg";
 import { Section } from "../styled-components/Container";
 import classes from "../styles/blog/SingleBlog.module.css";
 
@@ -15,7 +15,7 @@ export default function SingleBlog() {
           <Link to="/blog">blog</Link>
         </li>
       </PageNavigation>
-      <Section padding="100px 0 220px">
+      <Section padding="100px 0 220px" className="btmSec">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
@@ -247,7 +247,7 @@ export default function SingleBlog() {
                         />
                       </div>
                       <div className={classes.submitBtn}>
-                        <Button bgClass="orange">post comment</Button>
+                        <Button bgClass="blue">post comment</Button>
                       </div>
                     </form>
                   </div>

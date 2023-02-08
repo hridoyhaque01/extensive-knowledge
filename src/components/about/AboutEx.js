@@ -9,9 +9,14 @@ export default function AboutEx() {
     <Section padding="100px 0">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6 pe-0 pe-lg-5">
+          <div className="col-lg-6  ps-lg-2 order-lg-2">
+            <div className={classes.aboutImg}>
+              <img src={about} alt="about-details" className="img-fluid" />
+            </div>
+          </div>
+          <div className="col-lg-6  pe-lg-5 order-lg-1">
             <div className={classes.aboutDetails}>
-              <H1 color="var(--orange-clr)">about extensive knowledge</H1>
+              <H1 color="var(--blue-clr)">about extensive knowledge</H1>
               <H2 color="var(--dark-clr)">
                 Welcome to The Educavo Online Learning
               </H2>
@@ -27,11 +32,6 @@ export default function AboutEx() {
                 adipisic ing elit, sed eius to mod tempor. Lorem ipsum dolor sit
                 amet
               </p>
-            </div>
-          </div>
-          <div className="col-lg-6 ps-0 ps-lg-2">
-            <div className={classes.aboutImg}>
-              <img src={about} alt="about-details" className="img-fluid" />
             </div>
           </div>
         </div>

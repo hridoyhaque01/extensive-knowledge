@@ -14,6 +14,11 @@ const H1 = styled.h1`
   text-transform: uppercase;
   margin-bottom: 8px;
   transition: all 0.3s ease-in-out;
+
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-18);
+    line-height: 24px;
+  }
 `;
 
 const H2 = styled.h2`
@@ -22,6 +27,14 @@ const H2 = styled.h2`
   color: ${(props) => props.color};
   line-height: 48px;
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-30);
+    line-height: 40px;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: var(--font-20);
+    line-height: 30px;
+  }
 `;
 
 const H3 = styled.h3`
@@ -44,7 +57,9 @@ const H4 = styled.h4`
 
 const Button = styled.a`
   padding: ${(props) => props.padding};
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--poppins-med);
   font-size: var(--font-18);
   color: ${(props) => props.color};
@@ -63,6 +78,11 @@ const Button = styled.a`
     color: #fff;
     background-color: var(--blue-hover-clr);
     border-color: var(--blue-hover-clr);
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 12px 30px;
+    font-size: var(--font-14);
   }
 `;
 

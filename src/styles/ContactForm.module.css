@@ -1,12 +1,14 @@
 .singleInfo {
   display: grid;
   grid-template-columns: 70px 1fr;
+  align-items: center;
   gap: 20px;
   padding: 40px 20px;
-  background-color: var(--light-clr);
+  background-color: var(--white-clr);
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .singleInfo:hover {
@@ -14,18 +16,12 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.infoIcon {
-  height: 70px;
-  display: flex;
+.infoIcon img {
+  /* display: flex;
   justify-content: center;
   align-items: center;
   border: 4px solid var(--orange-hover-clr);
-  border-radius: 50%;
-}
-
-.infoIcon i {
-  font-size: var(--font-28);
-  color: var(--orange-clr);
+  border-radius: 50%; */
 }
 
 .infoContent h5 {
@@ -70,7 +66,8 @@
 
 .contactForm {
   padding: 40px;
-  background-color: var(--light-clr);
+  background-color: var(--white-clr);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contactForm h2 {
@@ -79,10 +76,14 @@
   color: var(--dark-clr);
 }
 
+.contactForm form input {
+  border: 1px solid var(--light-clr);
+}
+
 .contactForm form textarea {
   padding: 13px 10px 13px 14px;
   width: 100%;
-  border: none;
+  border: 1px solid var(--light-clr);
   outline: none;
 }
 
@@ -104,3 +105,56 @@
   height: 210px;
   margin-bottom: 40px;
 }
+
+/* media query start  */
+
+@media screen and (max-width: 1199px) {
+  .infoContent h4 {
+    font-size: var(--font-16);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .singleInfo {
+    margin-bottom: 30px;
+  }
+
+  .formContent {
+    margin-top: 20px !important;
+  }
+
+  .map {
+    height: 340px;
+  }
+
+  .contactForm {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .singleInput {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .singleInfo {
+    padding: 30px 20px;
+  }
+
+  .singleInfo {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+
+  .contactForm {
+    padding: 30px 20px;
+  }
+
+  .contactForm h2 {
+    font-size: var(--font-24);
+  }
+}
+
+/* media query end  */

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { teacher1 } from "../../images/team/Images";
+import { Social } from "../../database/HomePageData";
+import { team1 } from "../../images/team/Images";
 import { Section } from "../../styled-components/Container";
 import classes from "../../styles/team/TeacherDetails.module.css";
 import PageNavigation from "../PageNavigation";
@@ -14,14 +15,14 @@ export default function TeamDetails() {
         </li>
       </PageNavigation>
 
-      <Section padding="100px 0 220px">
+      <Section padding="100px 0 220px" className="btmSec">
         <div className="container">
           <div className="row ">
             <div className="col-lg-5">
               <div className={classes.imagePart}>
                 <div className={classes.img}>
                   <img
-                    src={teacher1}
+                    src={team1}
                     alt="extensive-knowledge"
                     className="img-fluid"
                   />
@@ -45,18 +46,19 @@ export default function TeamDetails() {
                   </ul>
                 </div>
                 <div className={classes.social}>
-                  <Link to="/">
-                    <i className="bx bxl-facebook" />
-                  </Link>
-                  <Link to="/">
-                    <i className="bx bxl-facebook" />
-                  </Link>
-                  <Link to="/">
-                    <i className="bx bxl-facebook" />
-                  </Link>
-                  <Link to="/">
-                    <i className="bx bxl-facebook" />
-                  </Link>
+                  <ul className="d-flex align-items-center justify-content-center">
+                    {Social.map((currentEl) => (
+                      <li key={currentEl.id}>
+                        <Link to={currentEl.link}>
+                          <img
+                            src={currentEl.icon}
+                            alt="ext-knowledge"
+                            className="img-fluid"
+                          />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>

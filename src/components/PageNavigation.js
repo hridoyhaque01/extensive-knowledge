@@ -5,7 +5,7 @@ import classes from "../styles/PageNavigation.module.css";
 
 export default function PageNavigation({ pageName, children }) {
   return (
-    <Section padding="120px 0" className={classes.pageNavigation}>
+    <Section padding="210px 0 120px" className={classes.pageNavigation}>
       <div
         className={`d-flex flex-column align-items-center ${classes.breadcrumbs}`}
       >

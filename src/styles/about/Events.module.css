@@ -31,7 +31,7 @@
 
 .tabBtn:hover {
   color: var(--white-clr);
-  background-color: var(--orange-clr) !important;
+  background-color: var(--blue-clr) !important;
 }
 
 .tabBtn span {
@@ -43,3 +43,75 @@
 .tabBtn span i {
   font-size: var(--font-34);
 }
+
+/* media query start  */
+
+@media screen and (max-width: 991px) {
+  .eventBg {
+    height: 320px;
+  }
+
+  .eventBg img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .eventTabs {
+    position: static;
+    transform: translateY(0);
+    margin-top: 30px;
+  }
+
+  .eventTabs ul {
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .tabItem {
+    margin-bottom: 30px;
+  }
+
+  .tabBtn {
+    padding: 14px 20px;
+    width: auto;
+    row-gap: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eventTabs ul {
+    gap: 10px;
+  }
+
+  .tabItem {
+    margin-bottom: 30px;
+  }
+
+  .tabBtn {
+    padding: 14px;
+    width: auto;
+    row-gap: 4px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .eventTabs {
+    margin: 0 0 30px;
+  }
+
+  .eventTabs ul {
+    gap: 10px;
+  }
+
+  .tabItem {
+    margin-bottom: 0;
+  }
+
+  .tabBtn span {
+    font-size: var(--font-15);
+  }
+}
+
+/* media query end  */

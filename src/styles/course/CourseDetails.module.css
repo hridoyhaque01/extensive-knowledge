@@ -49,12 +49,12 @@
   font-family: var(--nunito-semi);
 }
 
-.title {
-  font-size: var(--font-24);
+.commonClr {
+  margin-bottom: 14px;
 }
 
-.contents p {
-  margin-top: 20px;
+.title {
+  font-size: var(--font-24);
 }
 
 .studentDetails {
@@ -108,9 +108,6 @@
 
 /* accordionBox  */
 
-.accordionBox {
-}
-
 .card {
   border: none !important;
 }
@@ -156,6 +153,7 @@
   column-gap: 10px;
   font-family: var(--nunito-semi);
   color: var(--fade-clr);
+  cursor: pointer;
 }
 
 .leftContent p i {
@@ -182,7 +180,7 @@
   align-items: center;
   justify-content: center;
   color: var(--white-clr);
-  background-color: var(--orange-clr);
+  background-color: rgba(255, 255, 255, 0.7);
   opacity: 0;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
@@ -195,7 +193,11 @@
 .teacherContent h4 a {
   font-family: var(--nunito-bold);
   font-size: var(--font-24);
-  color: inherit;
+  color: var(--dark-clr);
+}
+
+.teacherContent span {
+  color: var(--dark-clr);
 }
 
 .socialLinks {
@@ -220,7 +222,7 @@
 
 .singleItem:hover .teacherContent {
   top: 50%;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 /* .reviews */
@@ -302,7 +304,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .playerContent h4 {
@@ -353,3 +355,75 @@
 .btnPart a:last-child {
   margin-bottom: 0;
 }
+
+/* media query start  */
+
+@media screen and (max-width: 991px) {
+  .wedgetContent {
+    margin-top: 40px;
+  }
+
+  .wedgetVideo .imgPart {
+    height: 400px;
+  }
+
+  .imgPart img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .introTabs {
+    border-radius: 0;
+  }
+
+  .tabLists {
+    flex-direction: column;
+    /* row-gap: 10px; */
+    border: none !important;
+  }
+
+  .tabLists li {
+    width: 100%;
+  }
+
+  .tabLists li button {
+    border: none !important;
+    border-bottom: 1px solid var(--light-blue-clr) !important;
+    border-radius: 0 !important;
+  }
+
+  .singleContent {
+    padding: 30px 20px;
+  }
+
+  .cardBody {
+    padding: 30px 10px;
+    /* background-color: var(--white-clr); */
+  }
+
+  .cardContent {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4px;
+    margin-bottom: 15px;
+  }
+
+  .rightContent {
+    padding-right: 20px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wedgetVideo .imgPart {
+    height: 275px;
+  }
+}
+
+/* media query end  */

@@ -36,7 +36,7 @@ export default function Events() {
                       aria-controls="pills-home"
                       aria-selected="true"
                     >
-                      <span>
+                      <span className="d-none d-sm-inline">
                         <i className={tab.icon} />
                       </span>
                       <span>{tab.title}</span>

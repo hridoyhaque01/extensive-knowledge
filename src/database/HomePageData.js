@@ -1,12 +1,51 @@
 // import images
 
 import {
+  course1,
+  course2,
+  course3,
+  course4,
+  course5,
+  course6,
   icon1,
-  one,
+  icon2,
+  icon3,
+  icon4,
+  icon5,
+  icon6,
+  icon7,
+  icon8,
+  icon9,
   quote,
-  sideOne,
-  testimonial,
+  side1,
+  side2,
+  side3,
+  side4,
+  side5,
+  side6,
+  social1,
+  social2,
+  social3,
+  social5,
+  test1,
+  test2,
+  test3,
 } from "../images/exporter/Images";
+
+import {
+  menu1,
+  menu10,
+  menu11,
+  menu12,
+  menu2,
+  menu3,
+  menu4,
+  menu5,
+  menu6,
+  menu7,
+  menu8,
+  menu9,
+} from "../images/header/Images";
 
 // navbar data
 
@@ -15,38 +54,44 @@ const Navbar = [
     id: 101,
     name: "home",
     to: "/",
-    icon: "bx bx-home",
+    icon: menu1,
+    icon2: menu7,
     class: "active",
   },
   {
     id: 102,
     name: "about",
     to: "/about",
-    icon: "bx bx-home",
+    icon: menu2,
+    icon2: menu8,
   },
   {
     id: 103,
     name: "courses",
     to: "/courses",
-    icon: "bx bx-home",
+    icon: menu3,
+    icon2: menu9,
   },
   {
     id: 104,
-    name: "team",
-    to: "/team",
-    icon: "bx bx-home",
+    name: "teachers",
+    to: "/teacher",
+    icon: menu4,
+    icon2: menu10,
   },
   {
     id: 105,
     name: "blog",
     to: "/blog",
-    icon: "bx bx-home",
+    icon: menu5,
+    icon2: menu11,
   },
   {
     id: 106,
     name: "contact",
     to: "/contact",
-    icon: "bx bx-home",
+    icon: menu6,
+    icon2: menu12,
   },
 ];
 
@@ -70,27 +115,27 @@ const Forms = [
 const SidebarGallary = [
   {
     id: 101,
-    image: sideOne,
+    image: side1,
   },
   {
     id: 102,
-    image: sideOne,
+    image: side2,
   },
   {
     id: 103,
-    image: sideOne,
+    image: side3,
   },
   {
     id: 104,
-    image: sideOne,
+    image: side4,
   },
   {
     id: 105,
-    image: sideOne,
+    image: side5,
   },
   {
     id: 106,
-    image: sideOne,
+    image: side6,
   },
 ];
 
@@ -99,22 +144,22 @@ const SidebarGallary = [
 const Social = [
   {
     id: 101,
-    icon: "bx bxl-facebook", // icon or image
+    icon: social1, // icon or image
     link: "https://web.facebook.com/hridoyhaque01",
   },
   {
     id: 102,
-    icon: "bx bxl-facebook", // icon or image
+    icon: social2, // icon or image
     link: "https://web.facebook.com/hridoyhaque01",
   },
   {
     id: 103,
-    icon: "bx bxl-facebook", // icon or image
+    icon: social3, // icon or image
     link: "https://web.facebook.com/hridoyhaque01",
   },
   {
     id: 104,
-    icon: "bx bxl-facebook", // icon or image
+    icon: social5, // icon or image
     link: "https://web.facebook.com/hridoyhaque01",
   },
 ];
@@ -165,49 +210,49 @@ const CategoriesData = [
   },
   {
     id: 102,
-    image: icon1,
+    image: icon2,
     title: "Computer Science",
     courses: "05 courses",
   },
   {
     id: 103,
-    image: icon1,
+    image: icon3,
     title: "Civil Engineering",
     courses: "05 courses",
   },
   {
     id: 104,
-    image: icon1,
+    image: icon4,
     title: "Artificial Intelligence",
     courses: "05 courses",
   },
   {
     id: 105,
-    image: icon1,
+    image: icon5,
     title: "Business Studies",
     courses: "05 courses",
   },
   {
     id: 106,
-    image: icon1,
+    image: icon6,
     title: "Web Development",
     courses: "05 courses",
   },
   {
     id: 107,
-    image: icon1,
+    image: icon7,
     title: "Life Course",
     courses: "08 courses",
   },
   {
     id: 108,
-    image: icon1,
+    image: icon8,
     title: "Lawyer Course",
     courses: "01 courses",
   },
   {
     id: 109,
-    image: icon1,
+    image: icon9,
     title: "Recipes",
     courses: "07 courses",
   },
@@ -218,75 +263,81 @@ const CategoriesData = [
 const Course = [
   {
     id: 101,
-    image: one,
+    image: course1,
     price: "$55.00",
     tag: "web development",
     title: "Become a PHP Master and Make Money Fast",
+    path: "/courses/crs1",
     views: "245",
     rating: "05",
     starIcon: "bx bx-star",
     userIcon: "bx bx-user",
-    arrowIcon: "bx bx-arrow-from-right",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
   {
     id: 102,
-    image: one,
+    image: course2,
     price: "$55.00",
     tag: "web development",
     title: "Learning jQuery Mobile for Beginners",
+    path: "/courses/crs1",
     views: "245",
     rating: "05",
     starIcon: "bx bx-star",
     userIcon: "bx bx-user",
-    arrowIcon: "bx bx-arrow-from-right",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
   {
     id: 103,
-    image: one,
+    image: course3,
     price: "$55.00",
     tag: "web development",
     title: "Become a PHP Master and Make Money Fast",
+    path: "/courses/crs1",
     views: "245",
     rating: "05",
     starIcon: "bx bx-star",
     userIcon: "bx bx-user",
-    arrowIcon: "bx bx-arrow-from-right",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
   {
     id: 104,
-    image: one,
+    image: course4,
     price: "$55.00",
     tag: "Photography",
     title: "The Art of Black and White Photography",
+    path: "/courses/crs1",
     views: "245",
     rating: "05",
     starIcon: "bx bx-star",
     userIcon: "bx bx-user",
-    arrowIcon: "bx bx-arrow-from-right",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
   {
     id: 105,
-    image: one,
+    image: course5,
     price: "$55.00",
     tag: "web development",
     title: "Learn Python – Interactive Python Tutorial",
+    path: "/courses/crs1",
     views: "245",
     rating: "05",
     starIcon: "bx bx-star",
     userIcon: "bx bx-user",
-    arrowIcon: "bx bx-arrow-from-right",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
   {
     id: 106,
-    image: one,
+    image: course6,
     price: "$55.00",
     tag: "web development",
     title: "From Zero to Hero with Advance Nodejs",
+    path: "/courses/crs1",
     views: "245",
     rating: "05",
     starIcon: "bx bx-star",
     userIcon: "bx bx-user",
-    arrowIcon: "bx bx-arrow-from-right",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
 ];
 
@@ -335,42 +386,42 @@ const TestimonialData = [
     icon: quote,
     quote:
       "I was skeptical of SEO and content marketing at first, but the Lorem Ipsum Company not only proved itself financially speaking, but the response I have received from customers is incredible. The work is top-notch and I consistently outrank all my competitors on Google.",
-    image: testimonial,
+    image: test1,
   },
   {
     id: 102,
     icon: quote,
     quote:
       "After being forced to move twice within five years, our customers had a hard time finding us and our sales plummeted. The Lorem Ipsum Co. not only revitalized our brand, but saved our nearly 100-year-old family business from the brink of ruin by optimizing our website for SEO Our Clients.",
-    image: testimonial,
+    image: test2,
   },
   {
     id: 103,
     icon: quote,
     quote:
       "Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.",
-    image: testimonial,
+    image: test3,
   },
   {
     id: 104,
     icon: quote,
     quote:
       "I was skeptical of SEO and content marketing at first, but the Lorem Ipsum Company not only proved itself financially speaking, but the response I have received from customers is incredible. The work is top-notch and I consistently outrank all my competitors on Google.",
-    image: testimonial,
+    image: test1,
   },
   {
     id: 105,
     icon: quote,
     quote:
       "After being forced to move twice within five years, our customers had a hard time finding us and our sales plummeted. The Lorem Ipsum Co. not only revitalized our brand, but saved our nearly 100-year-old family business from the brink of ruin by optimizing our website for SEO Our Clients.",
-    image: testimonial,
+    image: test2,
   },
   {
     id: 106,
     icon: quote,
     quote:
       "Professional, responsive, and able to keep up with ever-changing demand and tight deadlines: That’s how I would describe Jeramy and his team at The Lorem Ipsum Company. When it comes to content marketing, you’ll definitely get the 5-star treatment from the Lorem Ipsum Company.",
-    image: testimonial,
+    image: test3,
   },
 ];
 
@@ -379,19 +430,20 @@ const TestimonialData = [
 const NewsData = [
   {
     id: 101,
-    image: one,
+    image: course4,
     userIcon: "bx bx-user",
     dateIcon: "bx bx-calendar",
     user: "admin",
     date: "june 15,2019",
     title: "University while the lovely valley team work",
+    path: "/courses/crs1",
     to: "/",
     more: "read more",
-    arrowIcon: "bx bx-arrow-from-left",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
   {
     id: 102,
-    image: one,
+    image: course2,
     userIcon: "bx bx-user",
     dateIcon: "bx bx-calendar",
     user: "admin",
@@ -399,11 +451,11 @@ const NewsData = [
     title: "While The Lovely Valley Team Work",
     to: "/",
     more: "read more",
-    arrowIcon: "bx bx-arrow-from-left",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
   {
     id: 103,
-    image: one,
+    image: course6,
     userIcon: "bx bx-user",
     dateIcon: "bx bx-calendar",
     user: "admin",
@@ -411,7 +463,7 @@ const NewsData = [
     title: "Modern School The Lovely Valley Team Work",
     to: "/",
     more: "read more",
-    arrowIcon: "bx bx-arrow-from-left",
+    arrowIcon: "bx bx-right-arrow-alt",
   },
 ];
 

@@ -55,3 +55,40 @@
   font-family: var(--poppins-med);
   font-size: var(--font-15);
 }
+
+/* media query start  */
+
+@media screen and (max-width: 991px) {
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .transform {
+    transform: translateY(0);
+  }
+
+  .aboutDetails {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .noticeTitle h2 {
+    font-size: var(--font-18);
+  }
+
+  .aboutDetails {
+    padding: 40px 16px;
+  }
+
+  .aboutDetails p {
+    font-size: var(--font-15);
+  }
+
+  .signPart {
+    margin-top: 20px;
+    column-gap: 20px;
+  }
+}
+
+/* media query end  */

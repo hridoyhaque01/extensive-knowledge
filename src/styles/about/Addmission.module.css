@@ -5,7 +5,7 @@
   padding: 30px;
   display: flex;
   align-items: flex-end;
-  background: url("../../images/about/left-bg2.png") no-repeat center
+  background: url("../../images/about/admission-left.png") no-repeat center
     center/cover;
 }
 
@@ -52,3 +52,23 @@
   color: var(--white-clr);
   background-color: var(--orange-hover-clr) !important;
 }
+
+/* media query start  */
+
+@media screen and (max-width: 991px) {
+  .addVideo {
+    height: 280px;
+  }
+
+  .addDetails {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .addVideo h3 {
+    font-size: var(--font-18);
+  }
+}
+
+/* media query end  */

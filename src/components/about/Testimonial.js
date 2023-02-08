@@ -12,7 +12,7 @@ export default function Testimonial() {
     <Section padding="100px 0">
       <div className="container">
         <div className="row justify-content-between">
-          <div className="col-md-4">
+          <div className="col-lg-4">
             <div className={classes.donation}>
               <div className={classes.donateImg}>
                 <img src={lapOne} alt="donate img" />
@@ -23,14 +23,14 @@ export default function Testimonial() {
                 eius to mod tempors incididunt ut labore et dolore magna this
                 aliqua enims ad minim.
               </P>
-              <Button to="/">Become A Donor</Button>
+              <Button to="/login">Become A Donor</Button>
               {/* <Link to="/" className={`common-btn ${classes.donateBtn}`}>
                 become a donar
               </Link> */}
             </div>
           </div>
 
-          <div className={`col-md-8 ${classes.testimonialTexts}`}>
+          <div className={`col-lg-8 ${classes.testimonialTexts}`}>
             {TestimonalData.map((currentEl) => (
               <div className={` ${classes.singleTest}`} key={currentEl.id}>
                 <div className={classes.writerImg}>

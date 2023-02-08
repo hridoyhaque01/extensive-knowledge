@@ -9,7 +9,16 @@ export default function Testimonial() {
   return (
     <Section padding="100px 0" bgColor="var(--light-blue-clr)">
       <div className="container">
-        <OwlCarousel className="owl-theme" loop margin={40}>
+        <OwlCarousel
+          className="owl-theme"
+          loop
+          margin={40}
+          responsive={{
+            0: { items: 1 },
+            768: { items: 2 },
+            1024: { items: 3 },
+          }}
+        >
           {TestimonialData.map((currentEl) => (
             <div className="item" key={currentEl.id}>
               <div className={classes.singleSlider}>

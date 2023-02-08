@@ -1,11 +1,21 @@
+.commonPart {
+  height: 100%;
+}
+
 .question {
   padding: 60px 34px;
   background-color: var(--light-clr);
   row-gap: 20px;
 }
 
+.faqQNA {
+  row-gap: 20px;
+}
+
 .card {
   background-color: var(--white-clr) !important;
+  border-radius: 5px !important;
+  overflow: hidden;
 }
 
 .cardHeader a {
@@ -25,9 +35,17 @@
   position: relative;
 }
 
+.thumbneil {
+  height: 100%;
+}
+
+.thumbneil img {
+  object-fit: cover;
+}
+
 .playBtn {
-  width: 70px;
-  height: 70px;
+  height: 60px;
+  width: 60px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -79,3 +97,27 @@
     opacity: 0;
   }
 }
+
+/* media query start  */
+
+@media screen and (max-width: 991px) {
+  .faqQNA {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .question {
+    padding: 30px 20px;
+  }
+
+  .cardHeader a {
+    padding: 20px 16px;
+  }
+
+  .faqQNA {
+    margin-top: 30px;
+  }
+}
+
+/* media query end  */

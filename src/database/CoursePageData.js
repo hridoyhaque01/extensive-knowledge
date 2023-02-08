@@ -1,4 +1,6 @@
 import { course1, course2 } from "../images/course/Image";
+import { social1, social2, social3, social4 } from "../images/exporter/Images";
+import { team1, team2 } from "../images/team/Images";
 
 const CourseData = [
   {
@@ -190,4 +192,341 @@ const CourseData = [
   },
 ];
 
-export { CourseData };
+const OverviewData = {
+  id: 101,
+  title: "Educavo Course Details",
+  para1:
+    "Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus.",
+
+  para2:
+    "Eleifend euismod pellentesque vel Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus. Sed consequat justo non mauris pretium at tempor justo sodales. Quisque tincidunt laoreet malesuada. Cum sociis natoque penatibus.",
+
+  reviews: [
+    {
+      id: 201,
+      number: "23,564",
+      text: "Total Students",
+    },
+    {
+      id: 202,
+      number: "4.5",
+      icon: "bx bxs-star",
+      text: "(1254 Rating)",
+    },
+    {
+      id: 203,
+      number: "256 ",
+      text: "Reviews",
+    },
+  ],
+
+  learnTitle: "What you’ll learn?",
+
+  learn: [
+    {
+      id: 301,
+      icon: "bx bx-chevrons-right",
+      text: "Phasellus enim magna, varius et commodo ut.",
+    },
+    {
+      id: 302,
+      icon: "bx bx-chevrons-right",
+      text: "Sed consequat justo non mauris pretium at tempor justo.",
+    },
+    {
+      id: 303,
+      icon: "bx bx-chevrons-right",
+      text: "Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo",
+    },
+    {
+      id: 304,
+      icon: "bx bx-chevrons-right",
+      text: "Ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi",
+    },
+    {
+      id: 305,
+      icon: "bx bx-chevrons-right",
+      text: "Deserunt sint consequatur odio quasi iusto ratione in vero cumque possimus",
+    },
+    {
+      id: 306,
+      icon: "bx bx-chevrons-right",
+      text: " Debitis alias et fugiat quas quia quod consequuntur mollitia nostrum.",
+    },
+    {
+      id: 307,
+      icon: "bx bx-chevrons-right",
+      text: "Aut voluptates officiis incidunt, hic ipsam autem corporis deleniti.",
+    },
+  ],
+
+  reqTitle: "Requirements",
+
+  Requirement: [
+    {
+      id: 401,
+      icon: "bx bx-chevrons-right",
+      text: "Enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo",
+    },
+    {
+      id: 402,
+      icon: "bx bx-chevrons-right",
+      text: "Ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel.",
+    },
+    {
+      id: 403,
+      icon: "bx bx-chevrons-right",
+      text: "Varius et commodo ut, ultricies vitae velit. Ut nulla tellus.",
+    },
+    {
+      id: 404,
+      icon: "bx bx-chevrons-right",
+      text: "fugiat reiciendis cum culpa reprehenderit vitae.",
+    },
+    {
+      id: 405,
+      icon: "bx bx-chevrons-right",
+      text: "Natus sit corporis nisi explicabo eum. ",
+    },
+  ],
+};
+
+const DurationData = [
+  {
+    id: 101,
+    icon: "bx bxs-file-blank",
+    text: "Lectures",
+    number: "3",
+  },
+  {
+    id: 102,
+    icon: "bx bxs-extension",
+    text: "Quizzes",
+    number: "0",
+  },
+  {
+    id: 103,
+    icon: "bx bxs-time-five",
+    text: "Duration",
+    number: "10 week",
+  },
+  {
+    id: 104,
+    icon: "bx bx-group",
+    text: "Students",
+    number: "21",
+  },
+  {
+    id: 105,
+    icon: "bx bxs-check-circle",
+    text: "Assessments",
+    number: "Yes",
+  },
+];
+
+const CurriculumData = [
+  {
+    id: "collapseOne",
+    title: "UI/ UX Introduction",
+    lists: [
+      {
+        id: 201,
+        icon: "bx bx-play",
+        link: "FTFaQWZBqQ8",
+        text: "What is UI/ UX Design?",
+        duration: "45 Minutes",
+      },
+      {
+        id: 202,
+        icon: "bx bx-play",
+        link: "C72WkcUZvco",
+        text: "User Research, Customer Surveys",
+        duration: "45 Minutes",
+      },
+      {
+        id: 203,
+        icon: "bx bx-play",
+        link: "jTCxUXGM6tc",
+        text: "User Flow, Ideal Task Scenario",
+        duration: "45 Minutes",
+      },
+    ],
+  },
+
+  {
+    id: "collapseTwo",
+    title: "Color Theory",
+    lists: [
+      {
+        id: 204,
+        icon: "bx bx-play",
+        link: "5tQ0hf2SCeo",
+        text: "What is color theory?",
+        duration: "45 Minutes",
+      },
+      {
+        id: 205,
+        icon: "bx bx-play",
+        link: "6a96youCTB8",
+        text: "What is the color wheel?",
+        duration: "45 Minutes",
+      },
+      {
+        id: 206,
+        icon: "bx bx-play",
+        link: "kqtD5dpn9C8",
+        text: "What is color temperature?",
+        duration: "45 Minutes",
+      },
+    ],
+  },
+
+  {
+    id: "collapseThree",
+    title: "Basic Typography",
+    lists: [
+      {
+        id: 207,
+        icon: "bx bx-play",
+        link: "kYY88h5J86A",
+        text: "What is Typography?",
+        duration: "45 Minutes",
+      },
+      {
+        id: 208,
+        icon: "bx bx-play",
+        link: "195RY7jCuZg",
+        text: "Typographic Basics",
+        duration: "45 Minutes",
+      },
+      {
+        id: 209,
+        icon: "bx bx-play",
+        link: "KJgsSFOSQv0",
+        text: "Basic concepts",
+        duration: "45 Minutes",
+      },
+    ],
+  },
+];
+
+const InstructorData = [
+  {
+    id: 101,
+    image: team1,
+    name: "Steve Smith",
+    state: "Professor",
+    path: "/teacher/teacher1",
+    links: [
+      {
+        id: 201,
+        icon: social1,
+        link: "https://facebook.com",
+      },
+      {
+        id: 202,
+        icon: social2,
+        link: "https://twitter.com",
+      },
+      {
+        id: 203,
+        icon: social3,
+        link: "https://linkedin.com",
+      },
+      {
+        id: 204,
+        icon: social4,
+        link: "https://google.com",
+      },
+    ],
+  },
+  {
+    id: 102,
+    image: team2,
+    name: "Eclyse Perry",
+    state: "Professor",
+    path: "/teacher/teacher1",
+    links: [
+      {
+        id: 205,
+        icon: social1,
+        link: "https://facebook.com",
+      },
+      {
+        id: 206,
+        icon: social2,
+        link: "https://twitter.com",
+      },
+      {
+        id: 207,
+        icon: social3,
+        link: "https://linkedin.com",
+      },
+      {
+        id: 208,
+        icon: social4,
+        link: "https://google.com",
+      },
+    ],
+  },
+];
+
+const ReviewsData = [
+  {
+    id: 101,
+    name: "Stephane Smith",
+    number: "4.5",
+    review: "bx bxs-star",
+    text: "256 Reviews",
+    para: "Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus.",
+    titletext: "Was this review helpful?",
+    icon1: "bx bxs-like",
+    icon2: "bx bxs-dislike",
+    reporttext: "Report",
+  },
+  {
+    id: 102,
+    name: "Anna Sthesia",
+    number: "4.5",
+    review: "bx bxs-star",
+    text: "256 Reviews",
+    para: "Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus.",
+    titletext: "Was this review helpful?",
+    icon1: "bx bxs-like",
+    icon2: "bx bxs-dislike",
+    reporttext: "Report",
+  },
+  {
+    id: 103,
+    name: "Petey Cruiser",
+    number: "4.5",
+    review: "bx bxs-star",
+    text: "256 Reviews",
+    para: "Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus.",
+    titletext: "Was this review helpful?",
+    icon1: "bx bxs-like",
+    icon2: "bx bxs-dislike",
+    reporttext: "Report",
+  },
+  {
+    id: 104,
+    name: "Rick O'Shea",
+    number: "4.5",
+    review: "bx bxs-star",
+    text: "256 Reviews",
+    para: "Phasellus enim magna, varius et commodo ut, ultricies vitae velit. Ut nulla tellus, eleifend euismod pellentesque vel, sagittis vel justo. In libero urna, venenatis sit amet ornare non, suscipit nec risus.",
+    titletext: "Was this review helpful?",
+    icon1: "bx bxs-like",
+    icon2: "bx bxs-dislike",
+    reporttext: "Report",
+  },
+];
+
+export {
+  CourseData,
+  OverviewData,
+  DurationData,
+  CurriculumData,
+  InstructorData,
+  ReviewsData,
+};

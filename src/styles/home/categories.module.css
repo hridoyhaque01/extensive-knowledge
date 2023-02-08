@@ -31,3 +31,10 @@
 .signleCat:hover p {
   color: var(--white-clr);
 }
+
+@media screen and (max-width: 575px) {
+  .signleCat {
+    padding: 25px 12px;
+    column-gap: 14px;
+  }
+}

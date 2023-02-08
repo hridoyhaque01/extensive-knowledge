@@ -6,11 +6,11 @@ export default function Newsletter() {
   return (
     <div className={` ${classes.newsletter}`}>
       <div className="row justify-content-between align-items-center">
-        <div className={`col-md-5 ${classes.newsletterText}`}>
+        <div className={`col-lg-6 ${classes.newsletterText}`}>
           <H1 color="var(--white-clr)">newsletter</H1>
           <H2 color="var(--white-clr)">Subscribe Us to join Our Community</H2>
         </div>
-        <div className={`col-md-6 ${classes.form}`}>
+        <div className={`col-lg-6 ${classes.form}`}>
           <form action="#">
             <div className="input-group">
               <input

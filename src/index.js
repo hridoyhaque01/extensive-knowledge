@@ -10,12 +10,15 @@ import { BrowserRouter } from "react-router-dom";
 import "swiper/swiper-bundle.css";
 import App from "./App";
 import "./App.css";
+import { AppProvider } from "./components/contaxt/useScrollHook";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <AppProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </AppProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

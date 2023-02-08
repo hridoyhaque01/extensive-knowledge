@@ -1,6 +1,12 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 30px 0;
   background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
 }
 
 .navList {
@@ -21,6 +27,14 @@
   color: var(--blue-clr);
 }
 
+.navList li a img:first-child {
+  display: block;
+}
+
+.navList li a img:last-child {
+  display: none;
+}
+
 /* .navList li a.active {
 } */
 
@@ -36,21 +50,110 @@
   font-size: var(--font-24);
 }
 
+/* media query start  */
+
 @media screen and (max-width: 991px) {
-  .menu {
-    width: 100%;
-    position: fixed;
+  .header {
+    padding: 0;
+    top: auto;
     bottom: 0;
     left: 0;
+    height: max-content;
+    background-color: transparent;
     display: flex;
     justify-content: center;
   }
 
-  .menuList {
-    display: inline-flex;
-    justify-content: center;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  .contain {
+    padding: 0;
+  }
+
+  .header .logo {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
     justify-content: center;
   }
+
+  .navList {
+    position: relative;
+    padding: 0 30px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 0;
+    background-color: var(--white-clr);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 5px 0 0;
+    transition: 0.3s;
+  }
+
+  .navList li {
+    transition: 0.3s;
+  }
+
+  .navList li a {
+    position: relative;
+    font-family: var(--poppins-reg);
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 4px;
+    width: 70px;
+  }
+
+  .navList li a span:first-child {
+    text-align: center;
+  }
+
+  .navList li a span img {
+    transition: all 0.3s;
+  }
+
+  .navList li a span:last-child {
+    font-size: var(--font-12);
+    opacity: 0;
+  }
 }
+
+@media screen and (max-width: 575px) {
+  .menu {
+    width: 100%;
+  }
+
+  .navList li a span:first-child {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navList {
+    padding: 0;
+  }
+
+  .navList li a {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navList {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .navList li a {
+    width: 40px;
+  }
+
+  .navList li a span:last-child {
+    font-size: var(--font-11);
+  }
+}
+
+/* media query end  */

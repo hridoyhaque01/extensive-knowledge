@@ -1,4 +1,6 @@
 .singleCourse {
+  display: block;
+  color: var(--fade-clr);
   background-color: var(--white-clr);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -17,6 +19,10 @@
   color: var(--white-clr);
   background-color: var(--blue-clr);
   border-radius: 3px;
+}
+
+.price span:last-child {
+  color: var(--fade-clr);
 }
 
 .priceTitle {
@@ -49,4 +55,29 @@
 .courseBtn {
   margin-left: auto;
   border-radius: 5px !important;
+}
+
+.courseBtn i {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1199px) {
+  .courseDetails {
+    padding: 24px 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .courseDetails {
+    padding: 24px 15px;
+  }
+
+  .price span:first-child {
+    padding: 4px 10px;
+  }
+
+  .courseBtn {
+    padding: 8px 16px !important;
+  }
 }

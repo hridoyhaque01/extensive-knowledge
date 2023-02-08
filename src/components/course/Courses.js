@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import { CourseData } from "../../database/CoursePageData";
 import { Section } from "../../styled-components/Container";
 import classes from "../../styles/course/Course.module.css";
+import { useScrollAuth } from "../contaxt/useScrollHook";
 import PageNavigation from "../PageNavigation";
 
 export default function Courses() {
+  const { handleClick } = useScrollAuth();
   const buttons = [];
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -25,7 +27,7 @@ export default function Courses() {
   return (
     <>
       <PageNavigation pageName="course" />
-      <Section padding="100px 0 220px" className="text-center">
+      <Section padding="100px 0 220px" className="text-center btmSec">
         <div className="container ">
           <div className="row gy-4 ">
             {currentBooks.map((currentEl) => (
@@ -38,7 +40,7 @@ export default function Courses() {
                     <div className={classes.courseName}>
                       <h2>{currentEl.tag}</h2>
                       <h3>
-                        <Link to="/">{currentEl.title}</Link>
+                        <Link to="/courses/12a">{currentEl.title}</Link>
                       </h3>
                     </div>
                   </div>
@@ -47,7 +49,9 @@ export default function Courses() {
                     <div className={classes.courseName}>
                       <h2>{currentEl.tag}</h2>
                       <h3>
-                        <Link to="/courses/12a">{currentEl.title}</Link>
+                        <Link to="/courses/12a" onClick={handleClick}>
+                          {currentEl.title}
+                        </Link>
                       </h3>
                     </div>
                     <div
@@ -69,7 +73,7 @@ export default function Courses() {
                       </p>
                     </div>
                     <div className={classes.prices}>
-                      <Link to="/" className={classes.priceBtn}>
+                      <Link to="/courses/12a" className={classes.priceBtn}>
                         <span>${parseFloat(currentEl.price).toFixed(2)}</span>
                         <span className={classes.arrowIcon}>
                           <i className={currentEl.arrowIcon} />

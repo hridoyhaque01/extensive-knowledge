@@ -58,3 +58,44 @@
   font-size: var(--font-15);
   text-transform: capitalize;
 }
+
+/* media query start  */
+
+@media screen and (max-width: 991px) {
+  .donation {
+    margin-bottom: 30px;
+  }
+
+  .testimonialTexts {
+    padding-left: 0;
+  }
+}
+
+/* media query end  */
+
+/* media query start  */
+
+@media screen and (max-width: 767px) {
+  .singleTest {
+    grid-template-columns: 100px 1fr;
+
+    column-gap: 30px;
+  }
+
+  .writerImg {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .singleTest {
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+  }
+
+  .writerImg {
+    margin-bottom: 30px;
+  }
+}
+
+/* media query end  */

@@ -12,5 +12,32 @@
 }
 
 .addBtn.blue {
-  background-color: red !important;
+  background-color: var(--blue-clr) !important;
+}
+
+.addBtn.round {
+  border-radius: 30px;
+}
+
+.addBtn.border {
+  color: var(--dark-clr);
+  background-color: transparent !important;
+  border: 2px solid var(--orange-clr) !important;
+}
+
+.addBtn.border:hover {
+  color: var(--white-clr);
+
+  background-color: var(--orange-hover-clr) !important;
+}
+
+.addBtn.blue.border {
+  border-color: var(--blue-clr) !important;
+  background-color: transparent !important;
+}
+
+.addBtn.blue.border:hover {
+  color: var(--white-clr);
+
+  background-color: var(--blue-clr) !important;
 }

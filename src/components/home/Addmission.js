@@ -1,20 +1,21 @@
 import React from "react";
 import { addmission } from "../../images/exporter/Images";
 import { Section } from "../../styled-components/Container";
-import { Button, H2, P } from "../../styled-components/Element";
+import { H2, P } from "../../styled-components/Element";
 import classes from "../../styles/home/Addmission.module.css";
+import Button from "../buttons/Button";
 
 export default function Addmission() {
   return (
-    <Section bgColor="var(--light-blue-clr)">
-      <div className="row align-items-center g-0">
-        <div className="col-md-6 pe-4">
-          <div className={classes.addImg}>
+    <Section bgColor="var(--light-blue-clr)" className="noPadd">
+      <div className="row align-items-xl-center g-0">
+        <div className="col-lg-6 ">
+          <div className={`${classes.commonPart} ${classes.addImg}`}>
             <img src={addmission} alt="addmission" className="img-fluid" />
           </div>
         </div>
-        <div className="col-md-6 ps-4">
-          <div className={classes.addDetails}>
+        <div className="col-lg-6 ">
+          <div className={`${classes.commonPart} ${classes.addDetails}`}>
             <H2 color="var(--dark-clr)">Admission Open for 2020</H2>
             <P margin="20px 0 30px">
               We denounce with righteous indignation and dislike men who are so
@@ -23,12 +24,7 @@ export default function Addmission() {
               weakness. These cases are perfectly simple and easy every pleasure
               is to be welcomed and every pain avoided.
             </P>
-            <Button
-              to="/"
-              padding="16px 40px"
-              bgColor="var(--blue-clr)"
-              color="var(--white-clr)"
-            >
+            <Button to="/login" round="round" bgColor="blue">
               Apply now
             </Button>
           </div>

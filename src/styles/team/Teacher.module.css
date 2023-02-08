@@ -15,7 +15,7 @@
   width: calc(100% - 60px);
   height: calc(100% - 60px);
   transform: translate(-50%, 100%) scale(0.1);
-  background-color: var(--orange-clr);
+  background-color: rgba(255, 255, 255, 0.7);
   opacity: 0;
   border-radius: 3px;
   transition: all 0.3s ease;
@@ -51,15 +51,19 @@
   margin: 10px 0 20px;
   font-family: var(--nunito-semi);
   font-size: var(--font-16);
+  color: var(--dark-clr);
 }
 
 .social {
   column-gap: 24px;
 }
 
-.social li a {
-  font-size: var(--font-20);
-  color: var(--white-clr);
+.social li a img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social li a:hover img {
+  transform: translateY(-4px);
 }
 
 .singleTeacher:hover .teacherDetails {
@@ -76,10 +80,25 @@
 
 .singleTeacher:hover:after {
   transform: translate(-50%, -50%) scale(1);
-  opacity: 0.9;
+  opacity: 1;
 }
 
-.singleTeacher:hover h2 a,
-.singleTeacher:hover h3 {
-  color: var(--white-clr) !important;
+/* media query start  */
+
+@media screen and (max-width: 767px) {
+  .singleTeacher {
+    margin: 0 80px;
+  }
 }
+
+@media screen and (max-width: 575px) {
+  .singleTeacher {
+    margin: 0;
+  }
+
+  .teacherDetails h2 {
+    font-size: var(--font-20);
+  }
+}
+
+/* media query end  */

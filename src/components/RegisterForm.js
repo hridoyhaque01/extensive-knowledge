@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { Section } from "../styled-components/Container";
 import classes from "../styles/Register.module.css";
 import Button from "./buttons/Submit";
+import { useScrollAuth } from "./contaxt/useScrollHook";
 import Input from "./Input";
 
 export default function LoginForm() {
+  const { handleClick } = useScrollAuth();
   return (
     <Section padding="100px 0 220px">
       <div className="container">
@@ -36,7 +38,11 @@ export default function LoginForm() {
                   <Button bgClass="orange">SIGN UP</Button>
                 </div>
                 <p>
-                  Already have an account? <Link to="/"> Sign In</Link>
+                  Already have an account?{" "}
+                  <Link to="/login" onClick={handleClick}>
+                    {" "}
+                    Sign In
+                  </Link>
                 </p>
               </form>
             </div>

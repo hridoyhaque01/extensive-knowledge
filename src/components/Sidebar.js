@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SidebarGallary, Social } from "../database/HomePageData";
-import { team1 } from "../images/exporter/Images";
+import { logo, team1 } from "../images/exporter/Images";
 import { P } from "../styled-components/Element";
 import classes from "../styles/Sidebar.module.css";
 import Fancybox from "./fancybox/Fancybox";
@@ -25,7 +25,7 @@ export default function Sidebar() {
       <div className="offcanvas-body text-center">
         <div className={classes.sidebarDetails}>
           <NavLink to="/">
-            <span>extensive knowledge</span>
+            <img src={logo} alt="ext-knowledge" className="img-fluid" />
           </NavLink>
           <P margin="20px 0 0 ">
             We denounce with righteous indige nationality and dislike men who
@@ -65,7 +65,11 @@ export default function Sidebar() {
             {Social.map((currentEl) => (
               <li key={currentEl.id}>
                 <a href={currentEl.link} rel="noreferrer" target="_blank">
-                  <i className={currentEl.icon} />
+                  <img
+                    src={currentEl.icon}
+                    alt="ext-knowledge"
+                    className="img-fluid"
+                  />
                 </a>
               </li>
             ))}

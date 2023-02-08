@@ -52,15 +52,17 @@
   margin-top: 20px;
 }
 
-.social a {
-  margin: 0 6px;
-  font-size: var(--font-24);
-  color: var(--fade-clr);
+.social ul {
+  column-gap: 10px;
+}
+
+.social ul li a {
+  display: inline-block;
   transition: all 0.3s ease-in-out;
 }
 
 .social a:hover {
-  color: var(--orange-clr);
+  transform: translateY(-4px);
 }
 
 /* teamRightContent  */
@@ -176,3 +178,35 @@
   margin-bottom: 26px;
   font-size: var(--font-28);
 }
+
+/* media query start  */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .personalInfo {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .teamRightContent {
+    margin: 30px 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .personalInfo {
+    flex-direction: column;
+  }
+
+  .singleProgress {
+    padding-left: 0;
+  }
+
+  .contentPart h3 {
+    margin-bottom: 20px;
+    font-size: var(--font-24);
+  }
+}
+
+/* media query end  */

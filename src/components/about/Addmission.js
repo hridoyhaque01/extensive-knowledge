@@ -29,7 +29,7 @@ export default function Addmission() {
               channel="youtube"
               autoplay
               isOpen={isOpen}
-              videoId="L61p2uyiMSo"
+              videoId="FTFaQWZBqQ8"
               onClose={() => setOpen(false)}
             />
           </div>
@@ -44,7 +44,7 @@ export default function Addmission() {
               enims ad minim veniam. Aenean massa. Cum sociis natoque penatibus
               et magnis.
             </P>
-            <Button to="/">apply now</Button>
+            <Button to="/login">apply now</Button>
           </div>
         </div>
       </div>

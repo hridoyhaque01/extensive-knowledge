@@ -4,12 +4,12 @@ import classes from "../styles/SectionTop.module.css";
 
 export default function SectionTop({ title, subtitle, children }) {
   return (
-    <div className="d-flex justify-content-between align-items-end">
-      <div className={classes.titles}>
+    <div className="d-flex flex-column flex-md-row  align-items-center justify-content-md-between align-items-md-end">
+      <div className={`${classes.titles} text-center text-md-start`}>
         <H1 color="var(--blue-clr)">{title}</H1>
         <H2 color="var(--dark-clr)">{subtitle}</H2>
       </div>
-      <div>{children}</div>
+      <div className={classes.secBtn}>{children}</div>
     </div>
   );
 }

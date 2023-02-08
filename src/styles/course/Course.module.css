@@ -163,3 +163,25 @@
 .pageBtn:disabled {
   color: var(--fade-clr);
 }
+
+/* media query start  */
+
+@media screen and (max-width: 1199px) {
+  .singleCourse {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .singleCourse {
+    margin: 0 80px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .singleCourse {
+    margin: 0;
+  }
+}
+
+/* media query end  */

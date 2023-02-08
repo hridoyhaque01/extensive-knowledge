@@ -10,7 +10,7 @@
 
 .breadcrumbs h1 {
   font-size: var(--font-48);
-  color: var(--orange-clr);
+  color: var(--blue-clr);
 }
 
 .breadcrumbNav ol li {
@@ -23,5 +23,16 @@
 }
 
 .breadcrumbNav ol li a:hover {
-  color: var(--orange-clr);
+  color: var(--blue-clr);
 }
+
+/* media query start  */
+
+@media screen and (max-width: 575px) {
+  .breadcrumbs h1 {
+    font-size: var(--font-30);
+    color: var(--blue-clr);
+  }
+}
+
+/* media query end  */

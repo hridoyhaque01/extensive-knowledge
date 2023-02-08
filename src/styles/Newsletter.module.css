@@ -1,9 +1,10 @@
 .newsletter {
-  position: absolute;
+  width: 85%;
+  margin: 0 auto;
   background: url("../images/newsletter-bg.jpg") no-repeat center center/cover;
   padding: 60px 70px;
   border-radius: 4px;
-  transform: translateY(-140px);
+  transform: translateY(-130px);
 }
 
 .form input::placeholder {
@@ -25,3 +26,47 @@
 .newsletterBtn:hover {
   background-color: var(--nevy-hover-clr) !important;
 }
+
+/* media query start  */
+
+@media screen and (max-width: 1199px) {
+  .newsletter {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .newsletter {
+    padding: 40px;
+  }
+
+  .newsletterText {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .newsletterText h2 {
+    font-size: var(--font-20);
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .newsletter {
+    padding: 30px 10px;
+    transform: translateY(-90px);
+  }
+
+  .form input {
+    height: 40px !important;
+  }
+
+  .newsletterBtn {
+    height: 40px;
+    padding: 0 20px;
+  }
+}
+
+/* media query end  */

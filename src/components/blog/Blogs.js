@@ -1,78 +1,78 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import src from "../../images/blogs/blog-img-1.jpg";
+import { BlogData } from "../../database/BlogPageData";
 import { Section } from "../../styled-components/Container";
 import { P } from "../../styled-components/Element";
 import classes from "../../styles/blog/Blogs.module.css";
+import { useScrollAuth } from "../contaxt/useScrollHook";
 import PageNavigation from "../PageNavigation";
 import BlogRightPart from "./BlogRightPart";
 
 export default function Blogs() {
+  const { handleClick } = useScrollAuth();
+
   return (
     <>
       <PageNavigation pageName="blog" />
-      <Section padding="100px 0 220px">
+      <Section padding="100px 0 220px" className="btmSec">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
-              <div className={classes.contentArea}>
-                <div
-                  className={`${classes.commonShadow} ${classes.singleBlog}`}
-                >
-                  <div className={classes.blogImg}>
-                    <Link to="/">
-                      <img
-                        src={src}
-                        alt="extensive-knowledge"
-                        className="img-fluid"
-                      />
-                    </Link>
-                  </div>
-                  <div className={classes.blogDetails}>
-                    <h3>
-                      <Link to="/blog/1023">
-                        University while the lovely valley team work
+              {BlogData.map((currentEl) => (
+                <div className={classes.contentArea} key={currentEl.id}>
+                  <div
+                    className={`${classes.commonShadow} ${classes.singleBlog}`}
+                  >
+                    <div className={classes.blogImg}>
+                      <Link to="/" onClick={handleClick}>
+                        <img
+                          src={currentEl.image}
+                          alt="extensive-knowledge"
+                          className="img-fluid"
+                        />
                       </Link>
-                    </h3>
-                    <ul
-                      className={`d-inline-flex align-items-center ${classes.tags}`}
-                    >
-                      <li>
-                        <span>
-                          <i className="bx bxs-calendar" />
-                        </span>
-                        <span>September 14, 2020</span>
-                      </li>
-                      <li>
-                        <span>
-                          <i className="bx bxs-user" />
-                        </span>
-                        <span>admin</span>
-                      </li>
-                      <li>
-                        <span>
-                          <i className="bx bx-book-alt" />
-                        </span>
-                        <span>University</span>
-                      </li>
-                    </ul>
-                    <P margin="16px 0 40px">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                      natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus. Donec quam...
-                    </P>
+                    </div>
+                    <div className={classes.blogDetails}>
+                      <h3>
+                        <Link
+                          to={`/blog/${currentEl.link}`}
+                          onClick={handleClick}
+                        >
+                          {currentEl.title}
+                        </Link>
+                      </h3>
+                      <ul
+                        className={`d-inline-flex align-items-center ${classes.tags}`}
+                      >
+                        {currentEl.details.map((detail) => (
+                          <li key={detail.id}>
+                            <img
+                              src={detail.icon}
+                              alt="extensive-knowledge"
+                              className="img-fluid"
+                            />
+                            <span>{detail.texts}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <P margin="16px 0 40px">{currentEl.para}</P>
 
-                    <Link
-                      to="/"
-                      className={`d-inline-flex align-items-center ${classes.readBtn}`}
-                    >
-                      <span>continue reading</span>
-                      <i className="bx bx-right-arrow-alt" />
-                    </Link>
+                      <Link
+                        to={`/blog/${currentEl.link}`}
+                        className={`d-inline-flex align-items-center ${classes.readBtn}`}
+                        onClick={handleClick}
+                      >
+                        <span>{currentEl.linkText}</span>
+                        <img
+                          src={currentEl.icon}
+                          alt="extensive-knowledge"
+                          className="img-fluid"
+                        />
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
             <div className="col-lg-4">
               <BlogRightPart />
