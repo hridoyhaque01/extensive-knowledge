@@ -8,6 +8,8 @@ export default function PageNavigation({ pageName, children }) {
     <Section padding="210px 0 120px" className={classes.pageNavigation}>
       <div
         className={`d-flex flex-column align-items-center ${classes.breadcrumbs}`}
+        data-aos="fade-in"
+        data-aos-delay="200"
       >
         <h1>{pageName}</h1>
         <nav aria-label="breadcrumb" className={classes.breadcrumbNav}>

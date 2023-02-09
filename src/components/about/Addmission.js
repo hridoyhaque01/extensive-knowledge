@@ -10,7 +10,7 @@ export default function Addmission() {
   return (
     <section className={classes.addmission}>
       <div className="row">
-        <div className={`col-lg-6 ${classes.addVideo}`}>
+        <div className={`col-lg-6 ${classes.addVideo}`} data-aos="fade-in">
           <div
             to="/"
             className={`d-inline-flex align-items-center ${classes.vidContent}`}
@@ -35,7 +35,7 @@ export default function Addmission() {
           </div>
         </div>
 
-        <div className={`col-lg-6  ${classes.addDetails}`}>
+        <div className={`col-lg-6  ${classes.addDetails}`} data-aos="fade-left">
           <div className="">
             <H2 color="var(--dark-clr)">Admission Open for 2023 </H2>
             <P margin="14px 0 40px">

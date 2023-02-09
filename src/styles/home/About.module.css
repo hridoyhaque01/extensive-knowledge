@@ -1,3 +1,7 @@
+.about {
+  overflow: visible !important;
+}
+
 .transform {
   transform: translateY(-65px);
 }

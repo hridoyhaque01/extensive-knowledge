@@ -1,5 +1,5 @@
 import ceo from "../ceo.png";
-import addmission from "../home/admission.png";
+import admission from "../home/admisson.jpg";
 import icon1 from "../home/category/icon1.png";
 import icon2 from "../home/category/icon2.png";
 import icon3 from "../home/category/icon3.png";
@@ -15,7 +15,7 @@ import course3 from "../home/course/course3.png";
 import course4 from "../home/course/course4.png";
 import course5 from "../home/course/course5.png";
 import course6 from "../home/course/course6.png";
-import sideOne from "../home/qna.png";
+import sideOne from "../home/qna.jpg";
 import side1 from "../home/sidebar/side1.jpg";
 import side2 from "../home/sidebar/side2.jpg";
 import side3 from "../home/sidebar/side3.jpg";
@@ -29,20 +29,20 @@ import home1 from "../home1.jpg";
 import logo from "../logo.png";
 import quote from "../quote2.png";
 import sign from "../sign.png";
-import social1 from "../social/fb.png";
-import social3 from "../social/insta.png";
-import social2 from "../social/linked.png";
-import social8 from "../social/map.png";
-import social4 from "../social/pint.png";
-import social5 from "../social/tweet.png";
-import social6 from "../social/whats.png";
-import social7 from "../social/yt.png";
+import social1 from "../social/fb.svg";
+import social3 from "../social/insta.svg";
+import social2 from "../social/linked.svg";
+import social8 from "../social/map.svg";
+import social4 from "../social/pint.svg";
+import social5 from "../social/tweet.svg";
+import social6 from "../social/whats.svg";
+import social7 from "../social/yt.svg";
 import team1 from "../team-1.jpg";
 import testimonial from "../testimonial.png";
 
 export {
   team1,
-  addmission,
+  admission,
   home1,
   sideOne,
   side1,

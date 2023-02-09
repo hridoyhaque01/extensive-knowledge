@@ -1,15 +1,15 @@
-import menu7 from "./fill/about.png";
-import menu8 from "./fill/blog.png";
-import menu9 from "./fill/contact.png";
-import menu11 from "./fill/course.png";
-import menu12 from "./fill/home.png";
-import menu10 from "./fill/team.png";
-import menu1 from "./strock/about.png";
-import menu2 from "./strock/blog.png";
-import menu3 from "./strock/contact.png";
-import menu5 from "./strock/course.png";
-import menu6 from "./strock/home.png";
-import menu4 from "./strock/team.png";
+import menu8 from "./fill/about.svg";
+import menu11 from "./fill/blog.svg";
+import menu12 from "./fill/contact.svg";
+import menu9 from "./fill/course.svg";
+import menu7 from "./fill/home.svg";
+import menu10 from "./fill/team.svg";
+import menu2 from "./strock/about.svg";
+import menu5 from "./strock/blog.svg";
+import menu6 from "./strock/contact.svg";
+import menu3 from "./strock/course.svg";
+import menu1 from "./strock/home.svg";
+import menu4 from "./strock/team.svg";
 
 export {
   menu1,

@@ -20,7 +20,12 @@ export default function Faq() {
               <H2 color="var(--dark-clr)">Frequently Asked Questions</H2>
               <div className={`d-flex flex-column ${classes.faqQNA}`}>
                 {FAQ.map((currentEl) => (
-                  <div className={classes.card} key={currentEl.id}>
+                  <div
+                    className={classes.card}
+                    key={currentEl.id}
+                    data-aos="fade-right"
+                    data-aos-delay={currentEl.delay}
+                  >
                     <div className={classes.cardHeader}>
                       <a
                         className="d-flex align-items-center questionBtn collapsed"

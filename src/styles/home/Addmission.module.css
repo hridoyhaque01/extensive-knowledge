@@ -1,3 +1,7 @@
+.wrap {
+  overflow: hidden !important;
+}
+
 .addDetails {
   padding: 40px;
 }

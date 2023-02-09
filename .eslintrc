@@ -27,6 +27,13 @@
     "jest": true
   },
   "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"]
+      }
+    ],
     "jsx-a11y/label-has-associated-control": 0,
     "react/jsx-props-no-spreading": 0,
     "react/destructuring-assignment": 0,
@@ -71,5 +78,5 @@
       }
     ]
   },
-  "plugins": ["prettier", "react", "react-hooks"]
+  "plugins": ["prettier", "react", "react-hooks", "jsx-a11y"]
 }

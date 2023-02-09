@@ -11,7 +11,12 @@ export default function Counter() {
       <div className="container">
         <div className="row">
           {Counterdata.map((currentEl) => (
-            <div className={`col-md-4 ${classes.counter}`} key={currentEl.id}>
+            <div
+              className={`col-md-4 ${classes.counter}`}
+              key={currentEl.id}
+              data-aos="fade-up"
+              data-aos-delay={currentEl.delay}
+            >
               <div
                 className={`d-flex flex-column align-items-center text-center ${classes.sinlgeCount} `}
               >

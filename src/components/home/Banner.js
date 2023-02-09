@@ -8,8 +8,8 @@ export default function Banner() {
     <section className={`${classes.banner}`}>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-10 ">
-            <h1>Education During COVID-19 Moving Towards E-Learning</h1>
+          <div className="col-lg-10 " data-aos="fade-up" data-aos-delay="400">
+            <h1>Dive into a World of Knowledge</h1>
             <P margin="25px 0 35px">
               Every act of conscious learning requires the willingness to suffer
               an injury to one’s self-esteem during COVID-19.

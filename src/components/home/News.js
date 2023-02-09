@@ -20,7 +20,12 @@ export default function News() {
           <div className="col-lg-7 ps-0 pe-0 pe-lg-4">
             <div className={classes.events}>
               {NewsData.map((currentEl) => (
-                <div className={`${classes.singleItem}`} key={currentEl.id}>
+                <div
+                  className={`${classes.singleItem}`}
+                  key={currentEl.id}
+                  data-aos="fade-right"
+                  data-aos-delay={currentEl.delay}
+                >
                   <div className={`${classes.newsImg}`}>
                     <img
                       src={currentEl.image}
@@ -65,7 +70,12 @@ export default function News() {
           </div>
           <div className="col-lg-5 pe-0 ps-0 ps-lg-4">
             {Events.map((currentEl) => (
-              <div className={`${classes.singleEvent}`} key={currentEl.id}>
+              <div
+                className={`${classes.singleEvent}`}
+                key={currentEl.id}
+                data-aos="fade-left"
+                data-aos-delay={currentEl.delay}
+              >
                 <div
                   className={`d-flex flex-column justify-content-center ${classes.date}`}
                 >

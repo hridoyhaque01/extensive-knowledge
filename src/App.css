@@ -68,6 +68,7 @@
 
   /* font size  */
 
+  --font-96: 96px;
   --font-68: 68px;
   --font-58: 58px;
   --font-48: 48px;
@@ -113,6 +114,10 @@ p {
   margin: 0;
 }
 
+section {
+  overflow: hidden;
+}
+
 .row {
   margin: 0;
 }
@@ -131,6 +136,12 @@ p {
 
 .nav li a.active img:last-child {
   display: block;
+}
+
+.scrollBtn {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
 }
 
 .common-btn {

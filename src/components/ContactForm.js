@@ -17,7 +17,11 @@ export default function ContactForm() {
 
             {contactData.map((currentEl) => (
               <div className="col-lg-4 col-md-6" key={currentEl.id}>
-                <div className={classes.singleInfo}>
+                <div
+                  className={classes.singleInfo}
+                  data-aos="fade-up"
+                  data-aos-delay={currentEl.delay}
+                >
                   <div className={classes.infoIcon}>
                     <img
                       src={currentEl.icon}

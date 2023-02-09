@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Course } from "../../database/HomePageData";
 import { Div, Section } from "../../styled-components/Container";
-import { Button as ArrBtn, P } from "../../styled-components/Element";
+import { P } from "../../styled-components/Element";
 import classes from "../../styles/home/course.module.css";
 import Button from "../buttons/Button";
 import { useScrollAuth } from "../contaxt/useScrollHook";
@@ -23,9 +23,14 @@ export default function Courses() {
         </SectionTop>
         <Div margin="40px 0 0" className="row g-4">
           {Course.map((currentEl) => (
-            <div className="col-lg-4 col-md-6" key={currentEl.id}>
+            <div
+              className="col-lg-4 col-md-6"
+              key={currentEl.id}
+              data-aos="fade-up"
+              data-aos-delay={currentEl.delay}
+            >
               <Link
-                to="/courses"
+                to={currentEl.path}
                 className={classes.singleCourse}
                 onClick={handleClick}
               >
@@ -41,13 +46,9 @@ export default function Courses() {
                     <span className="d-inline-block">{currentEl.price}</span>
                     <span>{currentEl.tag}</span>
                   </div>
-                  <Link
-                    className={classes.priceTitle}
-                    to={currentEl.path}
-                    onClick={handleClick}
-                  >
+                  <h4 className={classes.priceTitle} onClick={handleClick}>
                     {currentEl.title}
-                  </Link>
+                  </h4>
                   <div className={classes.courseFooter}>
                     <P>
                       <span>
@@ -63,16 +64,13 @@ export default function Courses() {
                       </span>
                       <span>{currentEl.rating}</span>
                     </P>
-                    <ArrBtn
-                      href="/"
-                      padding="6px 14px"
-                      border="1px solid var(--blue-clr)"
-                      color="var(--dark-clr)"
+                    <button
+                      type="button"
                       className={classes.courseBtn}
                       onClick={handleClick}
                     >
                       <i className={currentEl.arrowIcon} />
-                    </ArrBtn>
+                    </button>
                   </div>
                 </div>
               </Link>

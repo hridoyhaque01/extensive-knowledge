@@ -13,7 +13,11 @@ export default function Testimonial() {
       <div className="container">
         <div className="row justify-content-between">
           <div className="col-lg-4">
-            <div className={classes.donation}>
+            <div
+              className={classes.donation}
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div className={classes.donateImg}>
                 <img src={lapOne} alt="donate img" />
               </div>
@@ -24,15 +28,17 @@ export default function Testimonial() {
                 aliqua enims ad minim.
               </P>
               <Button to="/login">Become A Donor</Button>
-              {/* <Link to="/" className={`common-btn ${classes.donateBtn}`}>
-                become a donar
-              </Link> */}
             </div>
           </div>
 
           <div className={`col-lg-8 ${classes.testimonialTexts}`}>
             {TestimonalData.map((currentEl) => (
-              <div className={` ${classes.singleTest}`} key={currentEl.id}>
+              <div
+                className={` ${classes.singleTest}`}
+                key={currentEl.id}
+                data-aos="fade-left"
+                data-aos-delay={currentEl.delay}
+              >
                 <div className={classes.writerImg}>
                   <img
                     src={currentEl.image}

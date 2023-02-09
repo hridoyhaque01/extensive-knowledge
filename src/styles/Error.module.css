@@ -1,0 +1,76 @@
+.dogesh {
+  height: 100vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dogImg {
+  text-align: center;
+}
+
+.dogImg img {
+  max-width: max-content !important;
+}
+
+.errorContent {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.errorContent h1 {
+  font-family: var(--poppins-bold);
+  font-size: var(--font-96);
+  color: var(--dark-clr);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.errorContent p {
+  font-size: var(--font-18);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .errorContent h1 {
+    font-size: var(--font-68);
+  }
+
+  /* .errorContent p {
+    font-size: var(--font-18);
+    margin-top: 10px;
+  } */
+}
+
+@media screen and (max-width: 767px) {
+  .errorContent {
+    margin-top: 35px;
+  }
+
+  .errorContent h1 {
+    font-size: var(--font-48);
+    letter-spacing: 5px;
+  }
+
+  .errorContent p {
+    font-size: var(--font-18);
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .errorContent {
+    margin-top: 35px;
+  }
+
+  .errorContent h1 {
+    font-size: var(--font-48);
+    letter-spacing: 5px;
+  }
+
+  .errorContent p {
+    font-size: var(--font-16);
+    margin-top: 4px;
+  }
+}

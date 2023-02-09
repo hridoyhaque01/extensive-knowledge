@@ -169,30 +169,35 @@ const Social = [
 const NoticeBoard = [
   {
     id: 101,
+    delay: "100",
     date: "20",
     month: "june",
     notice: "Lorem Ipsum is simply dummy text of the printing and setting",
   },
   {
     id: 102,
+    delay: "100",
     date: "22",
     month: "Aug",
     notice: "Lorem Ipsum is simply dummy text of the printing and setting",
   },
   {
     id: 103,
+    delay: "100",
     date: "14",
     month: "May",
     notice: "Lorem Ipsum is simply dummy text of the printing and setting",
   },
   {
     id: 104,
+    delay: "100",
     date: "31",
     month: "Sept",
     notice: "Lorem Ipsum is simply dummy text of the printing and setting",
   },
   {
     id: 105,
+    delay: "100",
     date: "28",
     month: "Oct",
     notice: "Lorem Ipsum is simply dummy text of the printing and setting",
@@ -204,54 +209,63 @@ const NoticeBoard = [
 const CategoriesData = [
   {
     id: 101,
+    delay: "",
     image: icon1,
     title: "Genarel Education",
     courses: "05 courses",
   },
   {
     id: 102,
+    delay: "100",
     image: icon2,
     title: "Computer Science",
     courses: "05 courses",
   },
   {
     id: 103,
+    delay: "200",
     image: icon3,
     title: "Civil Engineering",
     courses: "05 courses",
   },
   {
     id: 104,
+    delay: "100",
     image: icon4,
     title: "Artificial Intelligence",
     courses: "05 courses",
   },
   {
     id: 105,
+    delay: "200",
     image: icon5,
     title: "Business Studies",
     courses: "05 courses",
   },
   {
     id: 106,
+    delay: "300",
     image: icon6,
     title: "Web Development",
     courses: "05 courses",
   },
   {
     id: 107,
+    delay: "100",
     image: icon7,
     title: "Life Course",
     courses: "08 courses",
   },
   {
     id: 108,
+    delay: "200",
     image: icon8,
     title: "Lawyer Course",
     courses: "01 courses",
   },
   {
     id: 109,
+    delay: "300",
     image: icon9,
     title: "Recipes",
     courses: "07 courses",
@@ -263,6 +277,7 @@ const CategoriesData = [
 const Course = [
   {
     id: 101,
+    delay: "",
     image: course1,
     price: "$55.00",
     tag: "web development",
@@ -276,6 +291,7 @@ const Course = [
   },
   {
     id: 102,
+    delay: "100",
     image: course2,
     price: "$55.00",
     tag: "web development",
@@ -289,6 +305,7 @@ const Course = [
   },
   {
     id: 103,
+    delay: "200",
     image: course3,
     price: "$55.00",
     tag: "web development",
@@ -302,6 +319,7 @@ const Course = [
   },
   {
     id: 104,
+    delay: "100",
     image: course4,
     price: "$55.00",
     tag: "Photography",
@@ -315,6 +333,7 @@ const Course = [
   },
   {
     id: 105,
+    delay: "200",
     image: course5,
     price: "$55.00",
     tag: "web development",
@@ -328,6 +347,7 @@ const Course = [
   },
   {
     id: 106,
+    delay: "300",
     image: course6,
     price: "$55.00",
     tag: "web development",
@@ -346,6 +366,7 @@ const Course = [
 const FAQ = [
   {
     id: "faqOne",
+    delay: "",
     bellIcon: "bx bx-bell",
     bellOffIcon: "bx bx-bell-off",
     question: "What are the requirements ?",
@@ -354,6 +375,7 @@ const FAQ = [
   },
   {
     id: "faqTwo",
+    delay: "100",
     bellIcon: "bx bx-bell",
     bellOffIcon: "bx bx-bell-off",
     question: "Does Educavo offer free courses?",
@@ -362,6 +384,7 @@ const FAQ = [
   },
   {
     id: "faqThree",
+    delay: "200",
     bellIcon: "bx bx-bell",
     bellOffIcon: "bx bx-bell-off",
     question: "What is the transfer application",
@@ -370,6 +393,7 @@ const FAQ = [
   },
   {
     id: "faqFour",
+    delay: "300",
     bellIcon: "bx bx-bell",
     bellOffIcon: "bx bx-bell-off",
     question: "What is distance education?",
@@ -430,6 +454,7 @@ const TestimonialData = [
 const NewsData = [
   {
     id: 101,
+    delay: "",
     image: course4,
     userIcon: "bx bx-user",
     dateIcon: "bx bx-calendar",
@@ -443,6 +468,7 @@ const NewsData = [
   },
   {
     id: 102,
+    delay: "100",
     image: course2,
     userIcon: "bx bx-user",
     dateIcon: "bx bx-calendar",
@@ -455,6 +481,7 @@ const NewsData = [
   },
   {
     id: 103,
+    delay: "200",
     image: course6,
     userIcon: "bx bx-user",
     dateIcon: "bx bx-calendar",
@@ -472,6 +499,7 @@ const NewsData = [
 const Events = [
   {
     id: 101,
+    delay: "",
     month: "june",
     date: "20",
     subjects: "math & english",
@@ -480,6 +508,7 @@ const Events = [
   },
   {
     id: 102,
+    delay: "100",
     month: "june",
     date: "21",
     subjects: "math & english",
@@ -488,6 +517,7 @@ const Events = [
   },
   {
     id: 103,
+    delay: "200",
     month: "june",
     date: "22",
     subjects: "math & english",
@@ -496,6 +526,7 @@ const Events = [
   },
   {
     id: 104,
+    delay: "300",
     month: "june",
     date: "23",
     subjects: "math & english",

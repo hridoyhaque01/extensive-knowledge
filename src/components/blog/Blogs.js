@@ -19,7 +19,12 @@ export default function Blogs() {
           <div className="row">
             <div className="col-lg-8">
               {BlogData.map((currentEl) => (
-                <div className={classes.contentArea} key={currentEl.id}>
+                <div
+                  className={classes.contentArea}
+                  key={currentEl.id}
+                  data-aos="fade-up"
+                  data-aos-delay={currentEl.delay}
+                >
                   <div
                     className={`${classes.commonShadow} ${classes.singleBlog}`}
                   >

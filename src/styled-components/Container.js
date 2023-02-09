@@ -6,6 +6,7 @@ const Section = styled.section`
   &.noPadd {
     padding: 0;
   }
+
   @media screen and (max-width: 991px) {
     padding: 80px 0;
 

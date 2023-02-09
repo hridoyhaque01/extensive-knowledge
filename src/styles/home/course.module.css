@@ -54,12 +54,29 @@
 
 .courseBtn {
   margin-left: auto;
+  padding: 6px 16px;
+  border: 1px solid var(--blue-clr);
+  outline: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
   border-radius: 5px !important;
+  transition: 0.3s;
 }
 
 .courseBtn i {
   font-size: 24px;
   line-height: 24px;
+}
+
+.courseBtn:hover {
+  color: var(--white-clr);
+  background-color: var(--blue-clr);
+}
+
+.singleCourse:hover .courseFooter p {
+  color: var(--fade-clr);
 }
 
 @media screen and (max-width: 1199px) {

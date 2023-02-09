@@ -22,7 +22,11 @@ export default function Teachers() {
           <div className="row gy-4">
             {TeachersData.map((currentEl) => (
               <div className="col-lg-4 col-md-6" key={currentEl.id}>
-                <div className={classes.singleTeacher}>
+                <div
+                  className={classes.singleTeacher}
+                  data-aos="fade-up"
+                  data-aos-delay={currentEl.delay}
+                >
                   <div className={classes.TeacherImg}>
                     <img
                       src={currentEl.image}

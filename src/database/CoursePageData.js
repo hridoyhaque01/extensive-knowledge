@@ -5,6 +5,7 @@ import { team1, team2 } from "../images/team/Images";
 const CourseData = [
   {
     id: "course1",
+    delay: "",
     tag: "Web development",
     title: "From Zero to Hero with Advance Nodejs",
     img: course1,
@@ -16,6 +17,7 @@ const CourseData = [
   },
   {
     id: "course2",
+    delay: "100",
     tag: "Web development",
     title: "Learning jQuery Mobile for Beginners",
     img: course2,
@@ -27,6 +29,7 @@ const CourseData = [
   },
   {
     id: "course3",
+    delay: "200",
     tag: "Web development",
     title: "Become a PHP Master and Make Money",
     img: course2,
@@ -38,6 +41,7 @@ const CourseData = [
   },
   {
     id: "course4",
+    delay: "100",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course1,
@@ -49,6 +53,7 @@ const CourseData = [
   },
   {
     id: "course5",
+    delay: "200",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course1,
@@ -60,6 +65,7 @@ const CourseData = [
   },
   {
     id: "course6",
+    delay: "300",
     tag: "Web development",
     title: "Introduction to Javascript for Beginners",
     img: course2,
@@ -71,6 +77,7 @@ const CourseData = [
   },
   {
     id: "course7",
+    delay: "100",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course2,
@@ -82,6 +89,7 @@ const CourseData = [
   },
   {
     id: "course8",
+    delay: "200",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course1,
@@ -93,6 +101,7 @@ const CourseData = [
   },
   {
     id: "course9",
+    delay: "300",
     tag: "Web development",
     title: "From Zero to Hero with Advance Nodejs",
     img: course1,
@@ -104,6 +113,7 @@ const CourseData = [
   },
   {
     id: "course10",
+    delay: "100",
     tag: "Web development",
     title: "Learning jQuery Mobile for Beginners",
     img: course2,
@@ -115,6 +125,7 @@ const CourseData = [
   },
   {
     id: "course11",
+    delay: "200",
     tag: "Web development",
     title: "Become a PHP Master and Make Money",
     img: course2,
@@ -126,6 +137,7 @@ const CourseData = [
   },
   {
     id: "course12",
+    delay: "300",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course1,
@@ -137,6 +149,7 @@ const CourseData = [
   },
   {
     id: "course13",
+    delay: "100",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course1,
@@ -148,6 +161,7 @@ const CourseData = [
   },
   {
     id: "course14",
+    delay: "200",
     tag: "Web development",
     title: "Introduction to Javascript for Beginners",
     img: course2,
@@ -159,6 +173,7 @@ const CourseData = [
   },
   {
     id: "course15",
+    delay: "300",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course2,
@@ -170,6 +185,7 @@ const CourseData = [
   },
   {
     id: "course16",
+    delay: "100",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course1,
@@ -181,6 +197,7 @@ const CourseData = [
   },
   {
     id: "course17",
+    delay: "200",
     tag: "Web development",
     title: "The Art of Black and White Photography",
     img: course2,

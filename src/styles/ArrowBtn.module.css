@@ -1,0 +1,27 @@
+.arrowBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transform: translateY(15px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+/* media query start  */
+
+@media screen and (max-width: 991px) {
+  .arrowBtn {
+    bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .arrowBtn img {
+    width: 80%;
+  }
+}

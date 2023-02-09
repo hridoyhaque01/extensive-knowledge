@@ -6,16 +6,24 @@ import classes from "../../styles/about/AboutEx.module.css";
 
 export default function AboutEx() {
   return (
-    <Section padding="100px 0">
+    <Section padding="100px 0" className="wrap">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6  ps-lg-2 order-lg-2">
-            <div className={classes.aboutImg}>
+            <div
+              className={classes.aboutImg}
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
               <img src={about} alt="about-details" className="img-fluid" />
             </div>
           </div>
           <div className="col-lg-6  pe-lg-5 order-lg-1">
-            <div className={classes.aboutDetails}>
+            <div
+              className={classes.aboutDetails}
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <H1 color="var(--blue-clr)">about extensive knowledge</H1>
               <H2 color="var(--dark-clr)">
                 Welcome to The Educavo Online Learning

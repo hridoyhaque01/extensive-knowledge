@@ -31,7 +31,12 @@ export default function Courses() {
         <div className="container ">
           <div className="row gy-4 ">
             {currentBooks.map((currentEl) => (
-              <div className="col-md-6 col-lg-4" key={currentEl.id}>
+              <div
+                className="col-md-6 col-lg-4"
+                key={currentEl.id}
+                data-aos="fade-up"
+                data-aos-delay={currentEl.delay}
+              >
                 <div className={classes.singleCourse}>
                   <div className={classes.courseContent}>
                     <div className={classes.courseImg}>

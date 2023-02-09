@@ -10,7 +10,11 @@ export default function Events() {
     <Section padding="100px 0">
       <div className="container">
         <div className="row align-items-start justify-content-between">
-          <div className={`col-lg-6 px-0 ${classes.eventLeft}`}>
+          <div
+            className={`col-lg-6 px-0 ${classes.eventLeft}`}
+            data-aos="fade-in"
+            data-aos-delay="200"
+          >
             <div className={`d-none d-md-block ${classes.eventBg}`}>
               <img src={eventBg} alt="event bg" className="img-fluid" />
             </div>
@@ -25,6 +29,8 @@ export default function Events() {
                     className={`nav-item ${classes.tabItem}`}
                     role="presentation"
                     key={tab.id}
+                    data-aos="fade-right"
+                    data-aos-delay={tab.delay}
                   >
                     <button
                       className={`nav-link ${classes.tabBtn} ${tab.active}`}
@@ -51,6 +57,8 @@ export default function Events() {
             <div
               className={`tab-content ${classes.tabContent}`}
               id="pills-tabContent"
+              data-aso="fade-in"
+              data-aos-delay="200"
             >
               {tabDetails.map((currentEl) => (
                 <div
@@ -59,6 +67,8 @@ export default function Events() {
                   role="tabpanel"
                   aria-labelledby="pills-home-tab"
                   key={currentEl.id}
+                  data-aos="fade-in"
+                  data-aos-delay="200"
                 >
                   <H2 color="var(--dark-clr)">{currentEl.title}</H2>
                   <P margin="30px 0 20px">{currentEl.texts}</P>

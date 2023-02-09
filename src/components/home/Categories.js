@@ -22,7 +22,12 @@ export default function Categories() {
         </SectionTop>
         <Div margin="40px 0 0" className="row g-4">
           {CategoriesData.map((currentEl) => (
-            <div className="col-lg-4 col-md-6" key={currentEl.id}>
+            <div
+              className="col-lg-4 col-md-6"
+              key={currentEl.id}
+              data-aos="fade-up"
+              data-aos-delay={currentEl.delay}
+            >
               <Link
                 href="/"
                 className={`d-flex align-items-center ${classes.signleCat}`}

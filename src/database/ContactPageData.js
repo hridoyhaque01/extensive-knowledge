@@ -3,6 +3,7 @@ import { cnt1, cnt2, cnt3 } from "../images/contact/Images";
 const contactData = [
   {
     id: 101,
+    delay: "",
     icon: cnt1,
     title: "Address",
     link: "",
@@ -11,6 +12,7 @@ const contactData = [
   },
   {
     id: 102,
+    delay: "100",
     icon: cnt2,
     title: "Email Address",
     link: "mailto:info@rstheme.com",
@@ -19,6 +21,7 @@ const contactData = [
   },
   {
     id: 103,
+    delay: "200",
     icon: cnt3,
     title: "Phone Number",
     link: "tel:(+088)589-8745",

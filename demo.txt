@@ -5,3 +5,8 @@
 }
 
 /* media query end  */
+
+data-aos="fade-up" data-aos-delay={}
+data-aos="fade-in" data-aos-delay={}
+data-aos="fade-right" data-aos-delay={}
+data-aos="fade-left" data-aos-delay={}

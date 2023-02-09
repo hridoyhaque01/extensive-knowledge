@@ -1,5 +1,5 @@
 import React from "react";
-import { addmission } from "../../images/exporter/Images";
+import { admission } from "../../images/exporter/Images";
 import { Section } from "../../styled-components/Container";
 import { H2, P } from "../../styled-components/Element";
 import classes from "../../styles/home/Addmission.module.css";
@@ -7,15 +7,22 @@ import Button from "../buttons/Button";
 
 export default function Addmission() {
   return (
-    <Section bgColor="var(--light-blue-clr)" className="noPadd">
+    <Section bgColor="var(--light-blue-clr)" className="noPadd ">
       <div className="row align-items-xl-center g-0">
         <div className="col-lg-6 ">
-          <div className={`${classes.commonPart} ${classes.addImg}`}>
-            <img src={addmission} alt="addmission" className="img-fluid" />
+          <div
+            className={`${classes.commonPart} ${classes.addImg}`}
+            data-aos="fade-in"
+          >
+            <img src={admission} alt="addmission" className="img-fluid" />
           </div>
         </div>
         <div className="col-lg-6 ">
-          <div className={`${classes.commonPart} ${classes.addDetails}`}>
+          <div
+            className={`${classes.commonPart} ${classes.addDetails}`}
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <H2 color="var(--dark-clr)">Admission Open for 2020</H2>
             <P margin="20px 0 30px">
               We denounce with righteous indignation and dislike men who are so

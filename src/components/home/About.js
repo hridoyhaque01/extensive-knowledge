@@ -12,7 +12,7 @@ export default function About() {
         <div className="row ">
           <div className="col-lg-4 ps-0 ps-lg-4 order-lg-2">
             <div className={`${classes.transform} ${classes.noticeBoard}`}>
-              <div className={classes.noticeTitle}>
+              <div className={classes.noticeTitle} data-aos="fade-left">
                 <h2>notice board</h2>
               </div>
               <div className={classes.noticePart}>
@@ -20,6 +20,8 @@ export default function About() {
                   <div
                     className={`d-flex align-items-center ${classes.singleNotice}`}
                     key={currentEl.id}
+                    data-aos="fade-left"
+                    data-aos-delay={currentEl.delay}
                   >
                     <div className={classes.date}>
                       <span className="d-block">{currentEl.date}</span>
@@ -33,7 +35,10 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="col-lg-8 ps-0 pe-0 pe-lg-4 order-lg-1">
+          <div
+            className="col-lg-8 ps-0 pe-0 pe-lg-4 order-lg-1"
+            data-aos="fade-up"
+          >
             <div className={`${classes.transform} ${classes.aboutDetails}`}>
               <H1 color="var(--blue-clr)">About us</H1>
               <H2 color="var(--dark-clr)">

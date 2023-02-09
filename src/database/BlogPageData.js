@@ -14,6 +14,7 @@ import {
 const BlogData = [
   {
     id: 101,
+    delay: "100",
     image: blog1,
     title: "University while the lovely valley team work",
     para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam...",
@@ -40,6 +41,7 @@ const BlogData = [
   },
   {
     id: 102,
+    delay: "200",
     image: blog2,
     title: "High school program starting soon 2021",
     para: "Accusamus est eos reprehenderit, omnis numquam quis nobis unde similique nostrum esse voluptatem iure, quisquam odit consectetur! Quae voluptatibus consequuntur dignissimos non tempore, nihil doloremque harum, neque totam provident doloribus atque.",
@@ -66,6 +68,7 @@ const BlogData = [
   },
   {
     id: 103,
+    delay: "300",
     image: blog3,
     title: "While the lovely valley team work",
     para: "Pariatur doloremque sit in? Repellat, modi repudiandae? Illo aperiam reprehenderit enim deserunt alias non consequatur inventore eligendi laudantium! Incidunt dicta vel omnis, sapiente debitis, illum maiores, fugit sint quae adipisci consectetur assumenda.",
@@ -92,6 +95,7 @@ const BlogData = [
   },
   {
     id: 104,
+    delay: "400",
     image: blog4,
     title: "This is a great source of content for anyone…",
     para: "Dolorem hic ullam voluptates. Quo commodi culpa vero aperiam exercitationem numquam molestias, blanditiis excepturi voluptate laudantium ipsam veritatis consectetur odio provident minima impedit ratione error, fuga porro aspernatur! Impedit quis blanditiis labore cumque ab in rerum maxime? Quae ipsam dolore labore necessitatibus dicta.",
@@ -118,6 +122,7 @@ const BlogData = [
   },
   {
     id: 105,
+    delay: "500",
     image: blog5,
     title: "While the lovely valley team work",
     para: "Laboriosam cumque quisquam dolor doloribus autem possimus rerum quis, velit provident doloremque fugiat illo tempora commodi molestiae esse? Omnis assumenda ad accusamus blanditiis? Modi, ipsam sunt! Odit autem suscipit at! Dicta deserunt aperiam doloremque cumque ab consequuntur a doloribus accusamus vero esse nihil eligendi facere.",
@@ -144,6 +149,7 @@ const BlogData = [
   },
   {
     id: 106,
+    delay: "300",
     image: blog6,
     title: "The Expenses You Are Thinking",
     para: "Aperiam deleniti perspiciatis quisquam quidem nesciunt ea unde. Ullam eius ducimus soluta illo, et, facere placeat laudantium rem fuga, optio facilis maiores sequi nemo numquam vero ratione quae officia voluptatum possimus. Debitis earum fuga corporis libero eos ipsa nihil maiores fugit quaerat.",
@@ -170,6 +176,7 @@ const BlogData = [
   },
   {
     id: 107,
+    delay: "100",
     image: blog5,
     title: "This is a great source of content for anyone…",
     para: "Ratione molestias similique consequuntur. Quibusdam quo asperiores neque accusantium atque aperiam ipsam officia sunt pariatur repellat dolorum, in maxime sequi libero ut eligendi temporibus repudiandae alias assumenda. Ratione delectus enim id deleniti sapiente voluptatibus a hic architecto exercitationem, rem modi.",
@@ -196,6 +203,7 @@ const BlogData = [
   },
   {
     id: 108,
+    delay: "200",
     image: blog6,
     title: "This is a great source of content for anyone…",
     para: "Explicabo labore iusto nemo fuga quidem quam error est dignissimos architecto quasi tenetur blanditiis asperiores quas accusantium. Nam in eius aspernatur error incidunt quaerat libero. Odit totam eos dolorem eum voluptas qui sapiente nobis odio facilis, soluta sunt voluptatibus nesciunt",

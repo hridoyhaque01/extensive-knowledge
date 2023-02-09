@@ -19,7 +19,11 @@ export default function TeamDetails() {
         <div className="container">
           <div className="row ">
             <div className="col-lg-5">
-              <div className={classes.imagePart}>
+              <div
+                className={classes.imagePart}
+                data-aos="fade-in"
+                data-aos-delay="100"
+              >
                 <div className={classes.img}>
                   <img
                     src={team1}

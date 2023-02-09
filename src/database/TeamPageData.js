@@ -12,6 +12,7 @@ import { social1, social2, social3, social5 } from "../images/exporter/Images";
 const TeachersData = [
   {
     id: 101,
+    delay: "",
     image: team1,
     name: "Sarah Taylor",
     state: "Professor",
@@ -41,9 +42,10 @@ const TeachersData = [
   },
   {
     id: 102,
+    delay: "100",
     image: team2,
-    name: "Tom Banton",
-    state: "Professor",
+    name: "Rifat Ali",
+    state: "web deigner",
     path: "/teacher/teacher2",
     links: [
       {
@@ -70,6 +72,7 @@ const TeachersData = [
   },
   {
     id: 103,
+    delay: "200",
     image: team3,
     name: "Luke Wright",
     state: "Instructor",
@@ -99,9 +102,10 @@ const TeachersData = [
   },
   {
     id: 104,
+    delay: "100",
     image: team6,
-    name: "James Fuller",
-    state: "Jr. Instructor",
+    name: "hridoy",
+    state: "React devloper",
     path: "/teacher/teacher4",
     links: [
       {
@@ -128,6 +132,7 @@ const TeachersData = [
   },
   {
     id: 105,
+    delay: "200",
     image: team4,
     name: "Smriti Mandhana",
     state: "Instructor",
@@ -158,9 +163,10 @@ const TeachersData = [
 
   {
     id: 106,
+    delay: "300",
     image: team5,
-    name: "Marco Jansen",
-    state: "Jr. Instructor",
+    name: "Saheduzzaman",
+    state: "UI/UX designer",
     path: "/teacher/teacher6",
     links: [
       {

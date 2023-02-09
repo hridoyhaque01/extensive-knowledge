@@ -98,7 +98,7 @@
 
   .navList li a {
     position: relative;
-    font-family: var(--poppins-reg);
+    /* font-family: var(--poppins-reg); */
     display: inline-flex;
     align-items: center;
     flex-direction: column;

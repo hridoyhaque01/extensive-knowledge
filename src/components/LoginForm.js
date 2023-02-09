@@ -10,7 +10,7 @@ export default function LoginForm() {
   const { handleClick } = useScrollAuth();
 
   return (
-    <Section padding="100px 0 220px">
+    <Section padding="100px 0 220px" className="btmSec">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10">
